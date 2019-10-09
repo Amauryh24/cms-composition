@@ -29,10 +29,10 @@
 Dans votre répertoire local créer un dossier `css` et ne compiler que le fichier `main.scss`
 
 #Découpage du projet :
-- Jen : page acceuil
-- Amaury : Archi intérieur
+- Jen : page Contact
+- Amaury : Archi intérieur + footer
 - Mika : A propos
-- j-f : Contact
+- j-f : Accueil + header
 
 #nomenclatures des id :
 section principale : page_nom-de-la-page ex: #page_accueil / #page_architecture
