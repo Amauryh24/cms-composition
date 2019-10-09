@@ -3,18 +3,14 @@
 ### Cms Composition Project
 
 #Arborescence :
+modèle : front-page.php / page.php / page-contact.php
 
-- index.php
-
-- Accueil : Front-page.php / home.php
-- Magasin : Page-Magasin.php
-- Article intérieur : Single.php
-- à propos : Single.php
-- Blog / inspiration : Page-blog.php
-- Contact : page-contact.php
-
-- style.css
-- functions.php
+- Casa : Front-page.php
+- magasin : Page.php
+- architecte-dinterieur: Page.php
+- a-propos : Page.php
+- news : Page.php
+- contact : page-contact.php
 
 
 #Technologies utilisées
