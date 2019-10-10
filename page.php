@@ -17,3 +17,4 @@ get_footer();
 endwhile; //resetting the page loop
 wp_reset_query(); //resetting the page query
 ?>
+<br><br><p>PAGE.PHP</p><br><br>
