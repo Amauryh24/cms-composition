@@ -1,11 +1,9 @@
 <?php 
 /*
-Template Name: PAGE
+Template Name: PAGE-d'un-produit
 */
 get_header();
-echo ('template page');
-
+echo ('un produit');
 get_footer();
 ?>
-
 <h1><?php the_title(); ?></h1>
