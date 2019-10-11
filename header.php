@@ -1,5 +1,5 @@
 <?php
 
-echo ('header');
+wp_nav_menu();
+
 ?>
-<br><br><p>HEADER.PHP</p><br><br>

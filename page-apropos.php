@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: PAGE-d'un-produit
+Template Name: PAGE-apropos
 */
 get_header();
 echo ('un produit');

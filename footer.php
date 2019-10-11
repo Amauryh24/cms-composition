@@ -1,5 +1,4 @@
 <?php
 
-echo ('footer');
+echo ('<br><br><p>Contenu de FOOTER.PHP</p><br><br>');
 ?>
-<br><br><p>FOOTER.PHP</p><br><br>

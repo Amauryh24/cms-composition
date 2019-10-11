@@ -48,4 +48,6 @@ function project_setup() {
 	remove_filter('the_content', 'wptexturize');
 }
 add_action('after_setup_theme', 'project_setup');
+
+register_nav_menu( 'primary', 'Primary Menu' );
 ?>

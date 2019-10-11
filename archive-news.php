@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: PAGE-des-Inspirations
+Template Name: PAGE-INSPIRATION
 */
 get_header();
 echo ('toutes mes inspirations');

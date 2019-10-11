@@ -3,8 +3,7 @@
 Template Name: PAGE-ACCUEIL
 */
 get_header();
-echo ('template page d accueil');
+the_title();
+echo ('<br><br><p>Contenu de FRONT-PAGE.PHP</p><br><br>');
 get_footer();
 ?>
-<h1><?php the_title(); ?></h1>
-<br><br><p>FRONT-PAGE.PHP</p><br><br>
