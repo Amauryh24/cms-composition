@@ -1,4 +1,5 @@
 <?php 
 
-echo ('header');
+wp_nav_menu();
+
 ?>
