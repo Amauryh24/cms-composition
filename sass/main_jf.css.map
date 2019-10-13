@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,IAAI;CACvB",
+    "sources": [
+        "main_jf.scss"
+    ],
+    "names": [],
+    "file": "main_jf.css"
+}

@@ -1,6 +1,6 @@
 <?php
 define('PROJECT_VERSION', '1.0.0');
-define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
+// define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'); ////DISABLE MATERIALIZE
 define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js');
 
 
@@ -8,8 +8,8 @@ define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize
 function project_scripts()
 {
 	// Chargement des styles
-	wp_enqueue_style('project_materialize_css', CDN_MATERIALIZE_CSS, array(), PROJECT_VERSION, 'all');
-	wp_enqueue_style('project_custom_css', get_template_directory_uri() . '/css/main.css', array('project_materialize_css'), PROJECT_VERSION, 'all');
+	// wp_enqueue_style('project_materialize_css', CDN_MATERIALIZE_CSS, array(), PROJECT_VERSION, 'all'); ////DISABLE MATERIALIZE
+	wp_enqueue_style('project_custom_css', get_template_directory_uri() . '/css/main.css', PROJECT_VERSION, 'all');
 
 	// Chargement des scripts
 	// > pour le dernier paramètre : false = dans <head> ou true = avant </body>
@@ -17,6 +17,12 @@ function project_scripts()
 	wp_enqueue_script('project_custom_js', get_template_directory_uri() . '/js/main.js', array('project_materialize_js'), PROJECT_VERSION, true); // false = dans <head> ou true = avant </body>
 }
 add_action('wp_enqueue_scripts', 'project_scripts');
+
+// add logo
+
+
+// fin add logo
+
 
 // RETIRER GUTENBERG
 // for posts
