@@ -18,10 +18,6 @@ function project_scripts()
 }
 add_action('wp_enqueue_scripts', 'project_scripts');
 
-// add logo
-
-
-// fin add logo
 
 
 // RETIRER GUTENBERG

@@ -14,9 +14,29 @@
 			'link_before'    => '<span>',
       		'link_after'     => '</span>'
 			);
+
+			
+			function modify_home_in_nav_menu_objects( $items, $args ) {
+				foreach ( $items as $k => $object ) {
+					// you can also target given page using this if:
+					// if ( 'page' == $object->object && 2 == $object->object_id ) {
+					if ( 81 == $object->ID ) {
+						$template_dir = get_template_directory_uri();
+						// $object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
+						$object->title = '<object type="image/svg+xml" data="' . $template_dir . '/svg/home-minimal.svg" alt=""></object>';
+						
+					}
+				}
+				return $items;
+			}
+			add_filter( 'wp_nav_menu_objects', 'modify_home_in_nav_menu_objects', 10, 2 );
+
+			
 			wp_nav_menu( $defaults );
 		?>
-		
+
+		<!-- <?php $template_dir = get_template_directory_uri();
+		echo file_get_contents("$template_dir/svg/home-minimal.svg"); ?> -->
 	</div>
 </div>
 
