@@ -2,8 +2,19 @@
 /*
 Template Name: PAGE-ACCUEIL
 */
-get_header();
-the_title();
-echo ('<br><br><p>Contenu de FRONT-PAGE.PHP</p><br><br>');
-get_footer();
+
+?>
+<?php get_header(); ?>
+  <br><br><p>Contenu de FRONT-PAGE.PHP</p><br><br>
+<?php get_footer(); ?>
+</body>
+</html>
+
+
+<?php
+// get_header();
+// wp_head();
+
+// get_footer();
+// wp_footer();
 ?>
