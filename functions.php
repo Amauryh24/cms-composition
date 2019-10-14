@@ -18,7 +18,7 @@ function project_scripts()
 }
 add_action('wp_enqueue_scripts', 'project_scripts');
 
-
+add_image_size('home_top',1500,1250,false);
 
 // RETIRER GUTENBERG
 // for posts

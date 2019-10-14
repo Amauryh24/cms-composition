@@ -11,8 +11,8 @@
 			// 'fallback_cb'     => 'wp_page_menu',
 			'items_wrap'      => '<ul>%3$s</ul>',
 			// 'depth'           => 2
-			'link_before'    => '<span>',
-      		'link_after'     => '</span>'
+			'link_before'    => '',
+      		'link_after'     => ''
 			);
 
 			
@@ -34,9 +34,6 @@
 			
 			wp_nav_menu( $defaults );
 		?>
-
-		<!-- <?php $template_dir = get_template_directory_uri();
-		echo file_get_contents("$template_dir/svg/home-minimal.svg"); ?> -->
 	</div>
 </div>
 

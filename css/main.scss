@@ -39,23 +39,99 @@
     text-decoration: none;
     position: relative;
     font-family: 'Proxima';
-    background: red;
+    // background: red;
 }
 
-.header-menu-inner a span:after{    
-    bottom: -15px;
-    content: "";
-    display: block;
-    height: 3px;
+$brown: #584E4A;
+$whitey: #f0f0f0;
+
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+
+.header-menu-inner ul li a{
     position: relative;
-    background: rgba(0, 0, 0, 0.9);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0%;
-    background: green;
-}
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 10px;
+    
+     &:before,
+      &:after {
+          content: '';
+          position: absolute;
+          bottom: 50px;
+          left: 18; right: 18;
+          height: 3px;
+          background-color: rgba(0, 0, 0, 0.9);
+      }
+      &:before {
+          opacity: 0;
+        //   transform: translateY(- $distance);
+        //   transition: transform 0s $easeOutBack, opacity 0s;
+      }
+      &:after {
+          opacity: 0;
+        //   transform: translateY($distance/2);
+        //   transition: transform $duration $easeOutBack, opacity $duration;
+      }
+      &:hover,
+      &:focus {
+          &:before,
+          &:after {
+              opacity: 1;
+              transform: translateY(0);
+          }
+          &:before {
+              transition: transform $duration $easeOutBack, opacity $duration;
+          }
+          &:after {
+              transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+          }
+      }
+  }
+  li img{
+      height: 21px;
+      position: relative;
+    //   top: 5px;
+  }
 
-a:hover span:after { 
-    width: 100%; 
-    // left: 0; 
-    background: green;
+.header-menu-inner ul #menu-item-89 > a{
+    color:white;
+    background: black;
+    text-transform: initial;
+    height: 0%;
+    padding: 20px 40px;
+    bottom:-50px;
 }
+////// BANDEAU ////// 
+
+.bandeau{
+    display: flex;
+}
+.bandeau-img-left{
+    width: 50%;
+}
+.bandeau-img-right{
+    width: 50%;
+}
+.bandeau img{
+    max-width:100%;
+    max-height:100%;
+}
+// .bandeau-titre-g{
+// 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+// 	position: relative;
+// 	height: 150px;
+// 	font-family: "proxima-nova", sans-serif;
+// 	top: -10%;
+// 	left: 210px;
+// 	background: white;
+// 	width: 603px;
+// }
+// .bandeau-titre-g h1{
+// 	display: flex;
+// 	justify-content: center;
+// 	vertical-align: middle;
+// 	background: red;
+// } 
