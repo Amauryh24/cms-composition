@@ -24,7 +24,20 @@
 						$template_dir = get_template_directory_uri();
 						// $object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
 						$object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
-						
+					}
+					if ( 89 == $object->ID ) {
+						$template_dir = get_template_directory_uri();
+						// $object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
+						$object->title = 'Wishlist <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+						<g id="icon-wishlist" transform="translate(-584 -35)">
+						  <circle id="Ellipse_54" data-name="Ellipse 54" class="cls-1" cx="2" cy="2" r="2" transform="translate(584 35)"/>
+						  <rect id="Rectangle_68" data-name="Rectangle 68" class="cls-1" width="10" height="2" transform="translate(590 36)"/>
+						  <circle id="Ellipse_55" data-name="Ellipse 55" class="cls-1" cx="2" cy="2" r="2" transform="translate(584 41)"/>
+						  <rect id="Rectangle_69" data-name="Rectangle 69" class="cls-1" width="10" height="2" transform="translate(590 42)"/>
+						  <circle id="Ellipse_56" data-name="Ellipse 56" class="cls-1" cx="2" cy="2" r="2" transform="translate(584 47)"/>
+						  <rect id="Rectangle_70" data-name="Rectangle 70" class="cls-1" width="10" height="2" transform="translate(590 48)"/>
+						</g>
+					  </svg>';
 					}
 				}
 				return $items;
