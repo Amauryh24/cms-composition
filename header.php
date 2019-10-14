@@ -23,7 +23,7 @@
 					if ( 81 == $object->ID ) {
 						$template_dir = get_template_directory_uri();
 						// $object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
-						$object->title = '<object type="image/svg+xml" data="' . $template_dir . '/svg/home-minimal.svg" alt=""></object>';
+						$object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
 						
 					}
 				}

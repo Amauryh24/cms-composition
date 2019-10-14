@@ -1,0 +1,71 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@font-face {
+  font-family: 'Proxima';
+  src: url("../font/ProximaNova-Regular.otf") format("opentype");
+}
+
+.header-menu {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header-menu-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 135px;
+  /* align-items: flex-end; */
+}
+
+.header-menu-inner ul {
+  /* height: 100%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* align-content: center; */
+}
+
+.header-menu-inner ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0px 18px;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.6px;
+  font-family: "proxima_novaregular";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  font-family: 'Proxima';
+  background: red;
+}
+
+.header-menu-inner a span:after {
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0%;
+  background: green;
+}
+
+a:hover span:after {
+  width: 100%;
+  background: green;
+}
+/*# sourceMappingURL=main.css.map */
