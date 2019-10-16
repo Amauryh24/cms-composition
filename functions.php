@@ -3,6 +3,12 @@ define('PROJECT_VERSION', '1.0.0');
 define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
 define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js');
 
+// TAILLES IMAGES PERSONNALISEES
+function add_custom_image_size() {
+	add_image_size( 'bandeau-accueil', 1500, 1250 );
+}
+add_action( 'init', 'add_custom_image_size' );
+
 
 // CHARGMENT DANS LE FRONT-END
 function project_scripts()
