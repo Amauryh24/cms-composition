@@ -46,6 +46,11 @@ function project_setup() {
 	// Support du titre de page
 	add_theme_support('title-tag');
 
+	// Register Custom Navigation Walker
+	//require_once('includes/wp_bootstrap_navwalker.php')
+
+	// Active la gestion des menus
+	register_nav_menus( array('primary' => 'principal', 'secondary' => 'secondaire') );
 
 	// Enlève générateur de version WP
 	remove_action('wp_head', 'wp_generator');
@@ -55,5 +60,4 @@ function project_setup() {
 }
 add_action('after_setup_theme', 'project_setup');
 
-register_nav_menu( 'primary', 'Primary Menu' );
 ?>

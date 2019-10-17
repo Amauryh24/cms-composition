@@ -1,10 +1,8 @@
 <?php
 /*
-Template Name: PAGE-Des-Produits
+Template Name: MAGASIN
 */
 get_header();
-echo ('ici tout la liste des produits');
-get_footer();
 ?>
 <h1><?php the_title(); ?></h1>
 
@@ -19,15 +17,24 @@ $my_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '5', '
 		<!-- ICI TES ARTICLES PAR ARTICLES. IL FAUT SEULEMENT FAIRE UN CODE, ET CELUI-CI VA SE REPÉTER PAR ARTICLE SI ARTICLE IL Y A. -->
 
 	<div class="article-par-article">
-		<?php the_title(); ?>
+		<?php
+			echo the_title(), ' (id: ';
+     	echo get_the_ID(), ') (category: ';
+			// get category slug in wordpress
+	      $cats =  get_the_category();
+	      $cat = $cats[0];
+	    	$cat_slug = $cat->slug;
+	    	echo $cat_slug, ')';
+			// echo get_cat_name( the_category_ID($echo = false) );
+		?>
 	</div>
-    <?php echo get_the_ID(); ?>
 
 	<?php endwhile; ?>
 <?php else: ?>
 	<p>Aucune article a été trouvé.</p>
+	<br><br><p>ARCHIVE-PRODUCTS.PHP</p><br><br>
 <?php endif;
 
 wp_reset_query(); //resetting the page query
+get_footer();
 ?>
-<br><br><p>ARCHIVE-PRODUCTS.PHP</p><br><br>
