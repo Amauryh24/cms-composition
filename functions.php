@@ -1,5 +1,5 @@
 <?php
-define('PROJECT_VERSION', '1.0.1');
+define('PROJECT_VERSION', '1.0.2');
 define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
 define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js');
 
