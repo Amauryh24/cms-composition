@@ -26,7 +26,7 @@
   display: flex;
 }
 
-.header-menu-inner ul li a {
+.header-menu-inner li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,7 @@
 
 .header-menu-inner ul #menu-item-89 > a svg {
   fill: white;
-  padding-left: 20px;
+  margin-left: 20px;
   width: 16px;
 }
 
@@ -107,8 +107,14 @@
 
 .header-menu-inner ul #menu-item-89 > a:hover svg {
   fill: black;
-  padding-left: 20px;
   width: 16px;
+}
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  color: red;
+  margin: 5px;
 }
 
 .bandeau {

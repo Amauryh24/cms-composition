@@ -1,6 +1,6 @@
 <?php
 define('PROJECT_VERSION', '1.0.0');
-// define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'); ////DISABLE MATERIALIZE
+define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'); ////DISABLE MATERIALIZE
 define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js');
 
 
@@ -8,7 +8,7 @@ define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize
 function project_scripts()
 {
 	// Chargement des styles
-	// wp_enqueue_style('project_materialize_css', CDN_MATERIALIZE_CSS, array(), PROJECT_VERSION, 'all'); ////DISABLE MATERIALIZE
+	wp_enqueue_style('project_materialize_css', CDN_MATERIALIZE_CSS, array(), PROJECT_VERSION, 'all'); ////DISABLE MATERIALIZE
 	wp_enqueue_style('project_custom_css', get_template_directory_uri() . '/css/main.css', PROJECT_VERSION, 'all');
 
 	// Chargement des scripts

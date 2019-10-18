@@ -11,8 +11,8 @@
 			// 'fallback_cb'     => 'wp_page_menu',
 			'items_wrap'      => '<ul>%3$s</ul>',
 			// 'depth'           => 2
-			'link_before'    => '',
-      		'link_after'     => ''
+			// 'link_before'    => '',
+      		// 'link_after'     => ''
 			);
 
 			
@@ -47,6 +47,11 @@
 			
 			wp_nav_menu( $defaults );
 		?>
+	</div>
+	<div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
 	</div>
 </div>
 
