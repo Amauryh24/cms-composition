@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: MAGASIN
+Template Name: ARCHIVE
 */
 get_header();
 ?>
@@ -10,12 +10,13 @@ get_header();
 
 $title_page = get_the_title();
 
-$my_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '5', 'category_name' => $title_page));
+$my_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '5', 'category_name' => 'news'));
 
 	if($my_posts->have_posts()) :
     while($my_posts->have_posts()) : $my_posts->the_post(); ?>
 		<!-- ICI TES ARTICLES PAR ARTICLES. IL FAUT SEULEMENT FAIRE UN CODE, ET CELUI-CI VA SE REPÉTER PAR ARTICLE SI ARTICLE IL Y A. -->
 
+</div>
 	<div class="article-par-article">
 		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		<?php
@@ -34,7 +35,6 @@ $my_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '5', '
 	<?php endwhile; ?>
 <?php else: ?>
 	<p>Aucune article a été trouvé.</p>
-	<br><br><p>ARCHIVE-PRODUCTS.PHP</p><br><br>
 <?php endif;
 
 wp_reset_query(); //resetting the page query

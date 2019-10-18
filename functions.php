@@ -1,5 +1,5 @@
 <?php
-define('PROJECT_VERSION', '1.0.0');
+define('PROJECT_VERSION', '1.0.1');
 define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
 define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js');
 
@@ -14,13 +14,13 @@ add_action( 'init', 'add_custom_image_size' );
 function project_scripts()
 {
 	// Chargement des styles
-	wp_enqueue_style('project_materialize_css', CDN_MATERIALIZE_CSS, array(), PROJECT_VERSION, 'all');
-	wp_enqueue_style('project_custom_css', get_template_directory_uri() . '/css/main.css', array('project_materialize_css'), PROJECT_VERSION, 'all');
+	wp_enqueue_style('composition_materialize', CDN_MATERIALIZE_CSS, array(), PROJECT_VERSION, 'all');
+	wp_enqueue_style('composition_custom', get_template_directory_uri() . '/css/main.css', array('composition_materialize'), PROJECT_VERSION, 'all');
 
 	// Chargement des scripts
 	// > pour le dernier paramètre : false = dans <head> ou true = avant </body>
-	wp_enqueue_script('project_materialize_js', CDN_MATERIALIZE_JS, array(), PROJECT_VERSION, true);
-	wp_enqueue_script('project_custom_js', get_template_directory_uri() . '/js/main.js', array('project_materialize_js'), PROJECT_VERSION, true); // false = dans <head> ou true = avant </body>
+	wp_enqueue_script('composition_materialize', CDN_MATERIALIZE_JS, array(), PROJECT_VERSION, true);
+	wp_enqueue_script('composition_custom', get_template_directory_uri() . '/js/main.js', array('composition_materialize'), PROJECT_VERSION, true); // false = dans <head> ou true = avant </body>
 }
 add_action('wp_enqueue_scripts', 'project_scripts');
 
@@ -44,7 +44,7 @@ function project_setup() {
 	add_theme_support('post-thumbnails');
 
 	// Support du titre de page
-	add_theme_support('title-tag');
+	// add_theme_support('title-tag');
 
 	// Register Custom Navigation Walker
 	//require_once('includes/wp_bootstrap_navwalker.php')
@@ -59,5 +59,22 @@ function project_setup() {
 	remove_filter('the_content', 'wptexturize');
 }
 add_action('after_setup_theme', 'project_setup');
+
+// fonction d'affichage de la date et catégorie d'un 'post'
+// Exemple :
+// <time class="entry-date" datetime="date-au-format-iso">date du calendrier</time> dans la catégorie xyz
+
+function project_give_me_meta_01($date1, $date2, $cat) {
+
+	$chaine = 'publié le <time class="entry-date" datetime=';
+	$chaine .= $date1;
+	$chaine .= '">';
+	$chaine .= $date2;
+	$chaine .= '</time> dans la categorie ';
+	$chaine .= $cat;
+
+	return $chaine;
+
+}
 
 ?>
