@@ -47,12 +47,18 @@
 			
 			wp_nav_menu( $defaults );
 		?>
+
+		<div class="burger">
+			<h5>Menu</h5>
+			<div class="lines">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			
+		</div>
 	</div>
-	<div class="burger">
-		<div class="line1"></div>
-		<div class="line2"></div>
-		<div class="line3"></div>
-	</div>
+	
 </div>
 
 

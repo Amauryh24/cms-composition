@@ -1,3 +1,4 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 body {
   background-color: green;
 }
@@ -6,8 +7,116 @@ body {
   background-color: pink;
 }
 
-body {
-  background-color: blue;
+@font-face {
+  font-family: 'Proxima';
+  src: url("../font/ProximaNova-Regular.otf") format("opentype");
+  src: url("../font/ProximaNova-Bold.otf") format("opentype");
+}
+
+.header-menu {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header-menu-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 135px;
+}
+
+.header-menu-inner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu-inner ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0px 18px;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  font-family: 'Proxima';
+}
+
+.header-menu-inner ul li:not(#menu-item-89) a {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.header-menu-inner ul li:not(#menu-item-89) a:before, .header-menu-inner ul li:not(#menu-item-89) a:after {
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  left: 18;
+  right: 18;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 0;
+}
+
+.header-menu-inner ul li:not(#menu-item-89) a:hover:before, .header-menu-inner ul li:not(#menu-item-89) a:hover:after, .header-menu-inner ul li:not(#menu-item-89) a:focus:before, .header-menu-inner ul li:not(#menu-item-89) a:focus:after {
+  width: calc(100% - 36px);
+  -webkit-transition: width 0.2s, opacity 0.5s, background 0.3s, -webkit-transform 0.6s;
+  transition: width 0.2s, opacity 0.5s, background 0.3s, -webkit-transform 0.6s;
+  transition: width 0.2s, opacity 0.5s, background 0.3s, transform 0.6s;
+  transition: width 0.2s, opacity 0.5s, background 0.3s, transform 0.6s, -webkit-transform 0.6s;
+}
+
+.header-menu-inner ul li img {
+  height: 21px;
+  position: relative;
+}
+
+.header-menu-inner ul #menu-item-89 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-menu-inner ul #menu-item-89 > a {
+  font-weight: 700;
+  text-transform: none;
+  color: white;
+  background: black;
+  font-size: 17px;
+  height: 49px;
+}
+
+.header-menu-inner ul #menu-item-89 > a svg {
+  fill: white;
+  padding-left: 20px;
+  width: 16px;
+}
+
+.header-menu-inner ul #menu-item-89 > a:hover {
+  color: black;
+  background: white;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-menu-inner ul #menu-item-89 > a:hover svg {
+  fill: black;
+  padding-left: 20px;
+  width: 16px;
 }
 
 body {
