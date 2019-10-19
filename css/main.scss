@@ -111,6 +111,7 @@
     .header-menu-inner ul #menu-item-89{
         display: flex;
         align-items: center;
+        margin-right: 35px;
     }
     .header-menu-inner ul #menu-item-89 > a{
         font-weight: 700;
@@ -148,15 +149,9 @@
             position: absolute;
             left: 8%;
         }
-
-
-
-            
-            
     }
-    }
+
     .header-menu-inner ul{
-        background: red;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -167,11 +162,7 @@
                 padding: 0px 18px;
                 color: rgba(0, 0, 0, 0.9);
                 letter-spacing: 0.6px;
-                font-size: 14px;
-                font-weight: 700;
-                text-transform: uppercase;
                 text-decoration: none;
-                position: relative;
                 font-family: 'Proxima';
             }
         li:not(#menu-item-89){
@@ -207,6 +198,7 @@
             // margin-right: 85px;
         }
     }
+}
 
 
 
