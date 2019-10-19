@@ -101,9 +101,16 @@
   .burger {
     display: none;
   }
+  .res-menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1226px) {
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
   .header-menu {
     width: 100%;
     margin: 0 auto;
@@ -195,9 +202,13 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    cursor: pointer;
+    height: 100%;
   }
   .burger .lines {
+    margin: auto auto;
     width: 85px;
+    z-index: 99;
   }
   .burger .lines div {
     height: 3px;
@@ -219,6 +230,61 @@
         -ms-grid-row-align: center;
         align-self: center;
     font-family: 'Proxima';
+  }
+  .res-menu {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    top: 0;
+    background: #5D4954;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .res-menu li {
+    opacity: 0;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  @-webkit-keyframes fading {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes fading {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
   }
 }
 /*# sourceMappingURL=main.css.map */

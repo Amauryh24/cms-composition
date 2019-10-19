@@ -55,10 +55,19 @@
 				<div class="line2"></div>
 				<div class="line3"></div>
 			</div>
-			
 		</div>
 	</div>
-	
+</div>
+<div class="res-menu">
+	<?php wp_nav_menu( $defaults ); ?>
+	<!-- <ul>
+		<li>start</li>
+		<li>lorem</li>
+		<li>slada</li>
+		<li>dzadad</li>
+		<li>dsss</li>
+		<li>lol</li>
+	</ul> -->
 </div>
 
 
