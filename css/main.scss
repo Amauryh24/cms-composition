@@ -180,12 +180,12 @@
         display: flex;
         cursor: pointer;
         height: 100%;
-
         .lines{
             margin: auto auto;
             width: 85px;
             z-index: 99;
             div{
+                transition: all 0.3s ease;
                 height: 3px;
                 background: black;
                 width: 16px;
@@ -240,6 +240,16 @@
             opacity: 1;
             transform: translateX(0px);
         }
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-3.2px, 6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-7px, -6px) scalex(1.625);
+        // width:16px;
     }
 }
 
