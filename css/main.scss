@@ -211,17 +211,11 @@
         right: 0;
         width: 30%;
         top: 0;
-        background: #5D4954;
-        // opacity: 0.3;
-        height: 100vh;
-        // ul{
-        //     display: flex;
-        //     font-size: 15px;
-        // }
+        background: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        transform: translateX(100%);
+        transform: translateX(calc(100% + 1px));
         transition: transform 0.5s ease-in;
         ul{
             width: 100%;
@@ -247,12 +241,15 @@
                         text-decoration: underline;
                       }
                 }
+                &:nth-of-type(6) a{ //remove second to last border-bottom
+                    border-bottom: 0px;
+                }
                 &:first-of-type{ // "LA MAISON DE LA FEMME" (IT Crowd 1.03)
                     height: 85px;
                     display: flex;
                     margin-left: -30px; // sorry not sorry
                     a{
-                        background-color: rgba(217, 207, 245, 0.4);
+                        background: black;
                         height: 85px;
                         width: 80px;
                         display: flex;
@@ -265,6 +262,40 @@
                         width: 20px;
                         height: 20px;
                     }
+                }
+                &:last-of-type{
+                    display: flex;
+                    align-items: center;
+                    margin: 40px 0;
+                    a{
+                        display: flex;
+                        padding: 16px 18px;
+                        width: initial; //counter
+                        letter-spacing: 0.6px; //counter
+                        border-bottom: 0px; //counter
+                        line-height: 100%;
+                        font-weight: 700;
+                        text-transform: none;
+                        color:black;
+                        background: white;
+                        font-size: 14px;
+                        height: 48px;
+                            svg{
+                                fill: black;
+                                margin-left: 20px;
+                                width: 16px;
+                            }
+                    &:hover{
+                        text-decoration: none;
+                        color:white;
+                        background: black;
+                        border: 1px rgba(136, 136, 136, 0.582) solid;
+                        svg{
+                            fill: white;
+                            width: 16px;
+                        }
+                    }
+                }
                 }
             }
         }

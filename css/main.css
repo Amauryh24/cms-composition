@@ -238,8 +238,7 @@
     right: 0;
     width: 30%;
     top: 0;
-    background: #5D4954;
-    height: 100vh;
+    background: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -250,8 +249,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(calc(100% + 1px));
+            transform: translateX(calc(100% + 1px));
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
@@ -283,6 +282,9 @@
   .res-menu ul li a:hover {
     text-decoration: underline;
   }
+  .res-menu ul li:nth-of-type(6) a {
+    border-bottom: 0px;
+  }
   .res-menu ul li:first-of-type {
     height: 85px;
     display: -webkit-box;
@@ -291,7 +293,7 @@
     margin-left: -30px;
   }
   .res-menu ul li:first-of-type a {
-    background-color: rgba(217, 207, 245, 0.4);
+    background: black;
     height: 85px;
     width: 80px;
     display: -webkit-box;
@@ -310,6 +312,46 @@
             filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(60deg) brightness(103%) contrast(101%);
     width: 20px;
     height: 20px;
+  }
+  .res-menu ul li:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 40px 0;
+  }
+  .res-menu ul li:last-of-type a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px 18px;
+    width: initial;
+    letter-spacing: 0.6px;
+    border-bottom: 0px;
+    line-height: 100%;
+    font-weight: 700;
+    text-transform: none;
+    color: black;
+    background: white;
+    font-size: 14px;
+    height: 48px;
+  }
+  .res-menu ul li:last-of-type a svg {
+    fill: black;
+    margin-left: 20px;
+    width: 16px;
+  }
+  .res-menu ul li:last-of-type a:hover {
+    text-decoration: none;
+    color: white;
+    background: black;
+    border: 1px rgba(136, 136, 136, 0.582) solid;
+  }
+  .res-menu ul li:last-of-type a:hover svg {
+    fill: white;
+    width: 16px;
   }
   .nav-active {
     -webkit-transform: translateX(0%);
