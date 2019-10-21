@@ -75,6 +75,16 @@
   border-spacing: 0;
 }
 
+.blacked {
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 33;
+  height: 100%;
+}
+
 @media screen and (min-width: 1227px) {
   .header-menu {
     max-width: 1500px;
@@ -279,7 +289,7 @@
   .burger .lines {
     margin: auto auto;
     width: 85px;
-    z-index: 99;
+    z-index: 9002;
   }
   .burger .lines div {
     -webkit-transition: all 0.3s ease;
@@ -326,6 +336,7 @@
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    z-index: 9001;
   }
   .res-menu ul {
     width: 100%;

@@ -1,5 +1,5 @@
 <?php wp_head(); ?>
-
+<div id="overlay"></div>
 <div class="header-menu">
 	<div class="header-menu-inner">
         <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/svg/logo-full.svg" alt="" />
