@@ -18,18 +18,25 @@ Template Name: Page_Architecte
             <div class="carousel carousel_slider">
                 <ul>
                     <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+                    <li class="carousel-item">
 
-                    <?php while ( have_rows('contenu') ) : the_row();?>
-                    <li class="carousel-item"> <img class="image" src="<?php the_sub_field('image'); ?>">
+                        <?php  while ( have_rows('contenu') ) : the_row();?>
+
+                        <?php    if( get_row_layout() == 'image' ):?>
+
+                        <img class="image" src="<?php the_sub_field('image'); ?>">
                         <div>
                             <a href=" <?php the_permalink(); ?>">
                                 <p> <?php the_sub_field('titre') ?> </p>
                                 <p>voir projet</p>
                             </a>
                         </div>
+
+                        <?php endif; endwhile;?>
+
                     </li>
-                    <?php endwhile;?>
-                    <?php endwhile;endif; ?>
+                    <?php endwhile;
+                endif; ?>
                     <?php wp_reset_postdata();?>
 
                 </ul>
