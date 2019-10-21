@@ -10,8 +10,8 @@
 <body>
   <div id="mic">
     <nav>
-       <div class="nav-wrapper white">
-         <a href="#" class="brand-logo black-text">CMS-COMPOSITION</a>
+       <div class="nav-wrapper black">
+         <a href="#" class="brand-logo white-text">CMS-COMPOSITION</a>
          <?php
            wp_nav_menu( array(
              'menu'            => 'top-menu',
