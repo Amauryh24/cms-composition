@@ -367,6 +367,18 @@
   .res-menu ul li:nth-of-type(6) a {
     border-bottom: 0px;
   }
+  .res-menu ul li:not(:first-of-type):not(:last-of-type) a:after {
+    content: "";
+    position: absolute;
+    background-image: url("../svg/fleche-droite.svg");
+    height: 9px;
+    width: 15px;
+    opacity: 0.5;
+    top: 24px;
+    right: 2px;
+    -webkit-filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(60deg) brightness(103%) contrast(101%);
+            filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(60deg) brightness(103%) contrast(101%);
+  }
   .res-menu ul li:first-of-type {
     height: 85px;
     display: -webkit-box;
