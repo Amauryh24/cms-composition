@@ -1,3 +1,38 @@
-body {
-  background-color: red;
+#mic {
+
+  #page-about {
+    h1 {
+      color: red;
+    }
+  }
+
+  #menu-default {
+    float: right !important;
+  }
+
+  .footer-content {
+    padding: 0 4%;
+
+    .divider {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    h4 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: 1px;
+      word-spacing: 0.5px;
+      margin: 0 0 25px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+  }
+
 }
