@@ -7,6 +7,10 @@
   background-color: red;
 }
 
+#get_projets img {
+  width: 100%;
+}
+
 #archidinterieur,
 #a_propos {
   padding-bottom: 50px;
