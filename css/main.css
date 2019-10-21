@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Proxima';
+    // font-style: normal;
+    // font-weight: normal;
+    src: url('../font/ProximaNova-Regular.otf') format('opentype');
+    src: url('../font/ProximaNova-Bold.otf') format('opentype');
+}
+
+body {
+  font-family: 'Proximua', sans-serif;
+}
+
+#mic #page-about h1 {
+  color: red; }
+#mic #menu-default {
+  float: right !important; }
+#mic .footer-content {
+  padding: 0 4%; }
+  #mic .footer-content .divider {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  #mic .footer-content h4 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    word-spacing: 0.5px;
+    margin: 0 0 25px; }
+  #mic .footer-content p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 2; }
