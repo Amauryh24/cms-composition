@@ -296,10 +296,6 @@
   }
 }
 
-body {
-  background-color: pink;
-}
-
 @font-face {
   font-family: 'Proxima';
   src: url("../font/ProximaNova-Regular.otf") format("opentype");
