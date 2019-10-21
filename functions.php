@@ -2,6 +2,7 @@
 define('PROJECT_VERSION', '1.0.0');
 define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'); ////DISABLE MATERIALIZE
 define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js');
+add_image_size( 'fullsize', 1500, 1250 );
 
 
 // CHARGMENT DANS LE FRONT-END
