@@ -59,7 +59,13 @@ table {
 }
 @media screen and (min-width: 1227px){
 .header-menu{
-    width: 70%;
+    // position: fixed;
+    // top: 0px;
+    // left: 0px;
+    // transition: transform 0.6s;
+
+    max-width: 1500px;
+    padding: 0 70px;
     margin: 0 auto;
 }
 .header-menu-inner{
