@@ -4,7 +4,7 @@
   src: url("../font/ProximaNova-Bold.otf") format("opentype");
 }
 
-.res-menu, .header-menu {
+.header-menu, .res-menu {
   /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -12,19 +12,7 @@
   /* HTML5 display-role reset for older browsers */
 }
 
-.res-menu html, .res-menu body, .res-menu div, .res-menu span, .res-menu applet, .res-menu object, .res-menu iframe,
-.res-menu h1, .res-menu h2, .res-menu h3, .res-menu h4, .res-menu h5, .res-menu h6, .res-menu p, .res-menu blockquote, .res-menu pre,
-.res-menu a, .res-menu abbr, .res-menu acronym, .res-menu address, .res-menu big, .res-menu cite, .res-menu code,
-.res-menu del, .res-menu dfn, .res-menu em, .res-menu img, .res-menu ins, .res-menu kbd, .res-menu q, .res-menu s, .res-menu samp,
-.res-menu small, .res-menu strike, .res-menu strong, .res-menu sub, .res-menu sup, .res-menu tt, .res-menu var,
-.res-menu b, .res-menu u, .res-menu i, .res-menu center,
-.res-menu dl, .res-menu dt, .res-menu dd, .res-menu ol, .res-menu ul, .res-menu li,
-.res-menu fieldset, .res-menu form, .res-menu label, .res-menu legend,
-.res-menu table, .res-menu caption, .res-menu tbody, .res-menu tfoot, .res-menu thead, .res-menu tr, .res-menu th, .res-menu td,
-.res-menu article, .res-menu aside, .res-menu canvas, .res-menu details, .res-menu embed,
-.res-menu figure, .res-menu figcaption, .res-menu footer, .res-menu header, .res-menu hgroup,
-.res-menu menu, .res-menu nav, .res-menu output, .res-menu ruby, .res-menu section, .res-menu summary,
-.res-menu time, .res-menu mark, .res-menu audio, .res-menu video, .header-menu html, .header-menu body, .header-menu div, .header-menu span, .header-menu applet, .header-menu object, .header-menu iframe,
+.header-menu html, .header-menu body, .header-menu div, .header-menu span, .header-menu applet, .header-menu object, .header-menu iframe,
 .header-menu h1, .header-menu h2, .header-menu h3, .header-menu h4, .header-menu h5, .header-menu h6, .header-menu p, .header-menu blockquote, .header-menu pre,
 .header-menu a, .header-menu abbr, .header-menu acronym, .header-menu address, .header-menu big, .header-menu cite, .header-menu code,
 .header-menu del, .header-menu dfn, .header-menu em, .header-menu img, .header-menu ins, .header-menu kbd, .header-menu q, .header-menu s, .header-menu samp,
@@ -36,7 +24,19 @@
 .header-menu article, .header-menu aside, .header-menu canvas, .header-menu details, .header-menu embed,
 .header-menu figure, .header-menu figcaption, .header-menu footer, .header-menu header, .header-menu hgroup,
 .header-menu menu, .header-menu nav, .header-menu output, .header-menu ruby, .header-menu section, .header-menu summary,
-.header-menu time, .header-menu mark, .header-menu audio, .header-menu video {
+.header-menu time, .header-menu mark, .header-menu audio, .header-menu video, .res-menu html, .res-menu body, .res-menu div, .res-menu span, .res-menu applet, .res-menu object, .res-menu iframe,
+.res-menu h1, .res-menu h2, .res-menu h3, .res-menu h4, .res-menu h5, .res-menu h6, .res-menu p, .res-menu blockquote, .res-menu pre,
+.res-menu a, .res-menu abbr, .res-menu acronym, .res-menu address, .res-menu big, .res-menu cite, .res-menu code,
+.res-menu del, .res-menu dfn, .res-menu em, .res-menu img, .res-menu ins, .res-menu kbd, .res-menu q, .res-menu s, .res-menu samp,
+.res-menu small, .res-menu strike, .res-menu strong, .res-menu sub, .res-menu sup, .res-menu tt, .res-menu var,
+.res-menu b, .res-menu u, .res-menu i, .res-menu center,
+.res-menu dl, .res-menu dt, .res-menu dd, .res-menu ol, .res-menu ul, .res-menu li,
+.res-menu fieldset, .res-menu form, .res-menu label, .res-menu legend,
+.res-menu table, .res-menu caption, .res-menu tbody, .res-menu tfoot, .res-menu thead, .res-menu tr, .res-menu th, .res-menu td,
+.res-menu article, .res-menu aside, .res-menu canvas, .res-menu details, .res-menu embed,
+.res-menu figure, .res-menu figcaption, .res-menu footer, .res-menu header, .res-menu hgroup,
+.res-menu menu, .res-menu nav, .res-menu output, .res-menu ruby, .res-menu section, .res-menu summary,
+.res-menu time, .res-menu mark, .res-menu audio, .res-menu video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -45,32 +45,32 @@
   vertical-align: baseline;
 }
 
-.res-menu article, .res-menu aside, .res-menu details, .res-menu figcaption, .res-menu figure,
-.res-menu footer, .res-menu header, .res-menu hgroup, .res-menu menu, .res-menu nav, .res-menu section, .header-menu article, .header-menu aside, .header-menu details, .header-menu figcaption, .header-menu figure,
-.header-menu footer, .header-menu header, .header-menu hgroup, .header-menu menu, .header-menu nav, .header-menu section {
+.header-menu article, .header-menu aside, .header-menu details, .header-menu figcaption, .header-menu figure,
+.header-menu footer, .header-menu header, .header-menu hgroup, .header-menu menu, .header-menu nav, .header-menu section, .res-menu article, .res-menu aside, .res-menu details, .res-menu figcaption, .res-menu figure,
+.res-menu footer, .res-menu header, .res-menu hgroup, .res-menu menu, .res-menu nav, .res-menu section {
   display: block;
 }
 
-.res-menu body, .header-menu body {
+.header-menu body, .res-menu body {
   line-height: 1;
 }
 
-.res-menu ol, .res-menu ul, .header-menu ol, .header-menu ul {
+.header-menu ol, .header-menu ul, .res-menu ol, .res-menu ul {
   list-style: none;
 }
 
-.res-menu blockquote, .res-menu q, .header-menu blockquote, .header-menu q {
+.header-menu blockquote, .header-menu q, .res-menu blockquote, .res-menu q {
   quotes: none;
 }
 
-.res-menu blockquote:before, .res-menu blockquote:after,
-.res-menu q:before, .res-menu q:after, .header-menu blockquote:before, .header-menu blockquote:after,
-.header-menu q:before, .header-menu q:after {
+.header-menu blockquote:before, .header-menu blockquote:after,
+.header-menu q:before, .header-menu q:after, .res-menu blockquote:before, .res-menu blockquote:after,
+.res-menu q:before, .res-menu q:after {
   content: '';
   content: none;
 }
 
-.res-menu table, .header-menu table {
+.header-menu table, .res-menu table {
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -317,8 +317,9 @@
   .res-menu {
     position: absolute;
     right: 0;
-    width: 30%;
+    width: 360px;
     top: 0;
+    height: 100vh;
     background: black;
     display: -webkit-box;
     display: -ms-flexbox;

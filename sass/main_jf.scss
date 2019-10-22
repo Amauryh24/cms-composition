@@ -6,7 +6,7 @@
     src: url('../font/ProximaNova-Bold.otf') format('opentype');
 }
 
-.res-menu, .header-menu{
+.header-menu, .res-menu{
     /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -56,6 +56,18 @@ table {
 	border-spacing: 0;
 }
 }
+
+// #fixed{
+//     position: fixed;
+//     right: 0;
+//     z-index: 9001;
+//     margin: 0;
+// 	padding: 0;
+// 	border: 0;
+// 	font-size: 100%;
+// 	font: inherit;
+// 	vertical-align: baseline;
+// }
 .blacked{
     background: rgba(0, 0, 0, 0.85);
     position: absolute;
@@ -260,11 +272,18 @@ table {
             font-family: 'Proxima';
         }
     }
+// .fixed{
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     height: 100vh;
+// }
     .res-menu{
-        position: absolute;
+        position:absolute;
         right: 0;
-        width: 30%;
+        width: 360px;
         top: 0;
+        height: 100vh;
         background: black;
         display: flex;
         flex-direction: column;
@@ -393,3 +412,10 @@ table {
         background: white;
     }
 }
+// .fixed{
+//     position: fixed;
+//     right: 0;
+//     z-index: 9001;
+//     height: 100vh;
+//     top:0;
+// }

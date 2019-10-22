@@ -22,8 +22,9 @@
 					// if ( 'page' == $object->object && 2 == $object->object_id ) {
 					if ( 81 == $object->ID ) {
 						$template_dir = get_template_directory_uri();
-						// $object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
+						// $test = bloginfo('template_directory');
 						$object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
+						
 					}
 					if ( 89 == $object->ID ) {
 						$template_dir = get_template_directory_uri();
@@ -58,8 +59,11 @@
 		</div>
 	</div>
 </div>
-<div class="res-menu">
-	<?php wp_nav_menu( $defaults ); ?>
+<!-- <div class="fixed"> -->
+	<div class="res-menu">
+		
+			<?php wp_nav_menu( $defaults ); ?>
+		
 </div>
-
+<!-- </div> -->
 
