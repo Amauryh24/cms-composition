@@ -1,4 +1,5 @@
 <?php
+echo get_the_ID();
     //The mobile numbers you need to internationalise:
     //
     //https://www.clockworksms.com/blog/convert-a-mobile-number-into-international-format/
