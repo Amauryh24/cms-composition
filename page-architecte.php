@@ -7,7 +7,7 @@ Template Name: Page_Architecte
 <?php get_header() ?>
 
 
-<section id="get_projets">
+<section id="get_projets_archi">
     <h1><?php the_field('diaporama_posts_projets_titre') ?></h1>
     <div class="row">
         <div class="col s12 m12 l8 offset-l1">
@@ -23,14 +23,17 @@ Template Name: Page_Architecte
                         <?php  while ( have_rows('contenu') ) : the_row();?>
 
                         <?php    if( get_row_layout() == 'image' ):?>
-
                         <img class="image" src="<?php the_sub_field('image'); ?>">
-                        <div>
-                            <a href=" <?php the_permalink(); ?>">
-                                <p> <?php the_sub_field('titre') ?> </p>
-                                <p>voir projet</p>
-                            </a>
-                        </div>
+
+                        <?php    elseif( get_row_layout() == 'titre' ):?>
+                        <a href=" <?php the_permalink(); ?>">
+                            <p> <?php the_sub_field('titre') ?> </p>
+                            <p>voir projet
+
+                            </p>
+
+                        </a>
+
 
                         <?php endif; endwhile;?>
 
@@ -134,6 +137,7 @@ Template Name: Page_Architecte
             <h2 class="texte-banner"><?php the_field('contact_texte-banner') ?></h2>
             <div>
                 contact
+                <img src='<?php bloginfo('template_directory'); ?>/svg/Group 1300.svg' alt='' />
             </div>
 
         </a>
