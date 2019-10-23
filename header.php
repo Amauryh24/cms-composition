@@ -59,11 +59,7 @@
 		</div>
 	</div>
 </div>
-<!-- <div class="fixed"> -->
-	<div class="res-menu">
-		
-			<?php wp_nav_menu( $defaults ); ?>
-		
+<div class="res-menu">
+	<?php wp_nav_menu( $defaults ); ?>
 </div>
-<!-- </div> -->
 

@@ -38,7 +38,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -57,17 +58,6 @@ table {
 }
 }
 
-// #fixed{
-//     position: fixed;
-//     right: 0;
-//     z-index: 9001;
-//     margin: 0;
-// 	padding: 0;
-// 	border: 0;
-// 	font-size: 100%;
-// 	font: inherit;
-// 	vertical-align: baseline;
-// }
 .blacked{
     background: rgba(0, 0, 0, 0.85);
     position: absolute;
@@ -78,92 +68,92 @@ table {
     height: 100%;
 }
 @media screen and (min-width: 1227px){
-.header-menu{
-    max-width: 1500px;
-    padding: 0 70px;
-    margin: 0 auto;
-}
-.header-menu-inner{
-    display: flex;
-    justify-content: space-between;
-    height: 135px;
-        ul{
-        display: flex;
-        }
-        li a{
-            display: flex;
-            align-items: center;
-            height: 100%;
-            padding: 0px 18px;
-            color: rgba(0, 0, 0, 0.9);
-            letter-spacing: 0.6px;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-            position: relative;
-            font-family: 'Proxima';
-        }
-}
-.header-menu-inner ul li:not(#menu-item-89) a{
-    position: relative; //peut etre inutile ??
-    text-transform: uppercase;
-    &:before,
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 50px;
-        left: 18; right: 18;
-        height: 3px;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 0;
+    .header-menu{
+        max-width: 1500px;
+        padding: 0 70px;
+        margin: 0 auto;
     }
-
-    &:hover,
-    &:focus {
+    .header-menu-inner{
+        display: flex;
+        justify-content: space-between;
+        height: 135px;
+            ul{
+            display: flex;
+            }
+            li a{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 0px 18px;
+                color: rgba(0, 0, 0, 0.9);
+                letter-spacing: 0.6px;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+                position: relative;
+                font-family: 'Proxima';
+            }
+    }
+    .header-menu-inner ul li:not(#menu-item-89) a{
+        position: relative; //peut etre inutile ??
+        text-transform: uppercase;
         &:before,
         &:after {
-            width: calc(100% - 36px);
-            transition: width 0.2s, opacity 0.5s, background 0.3s, transform 0.6s;
+            content: '';
+            position: absolute;
+            bottom: 50px;
+            left: 18; right: 18;
+            height: 3px;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 0;
+        }
+
+        &:hover,
+        &:focus {
+            &:before,
+            &:after {
+                width: calc(100% - 36px);
+                transition: width 0.2s, opacity 0.5s, background 0.3s, transform 0.6s;
+            }
         }
     }
-}
-.header-menu-inner ul li img{
-      height: 21px;
-      position: relative;
-}
-.header-menu-inner ul #menu-item-89{
-    display: flex;
-    align-items: center;
-}
-.header-menu-inner ul #menu-item-89 > a{
-    font-weight: 700;
-    text-transform: none;
-    color:white;
-    background: black;
-    font-size: 17px;
-    height: 49px;
-        svg{
-            fill: white;
-            margin-left: 20px;
-            width: 16px;
+    .header-menu-inner ul li img{
+        height: 21px;
+        position: relative;
     }
-    &:hover{
-        color:black;
-        background: white;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-        svg{
-            fill: black;
-            width: 16px;
+    .header-menu-inner ul #menu-item-89{
+        display: flex;
+        align-items: center;
+    }
+    .header-menu-inner ul #menu-item-89 > a{
+        font-weight: 700;
+        text-transform: none;
+        color:white;
+        background: black;
+        font-size: 17px;
+        height: 49px;
+            svg{
+                fill: white;
+                margin-left: 20px;
+                width: 16px;
+        }
+        &:hover{
+            color:black;
+            background: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+            svg{
+                fill: black;
+                width: 16px;
+            }
         }
     }
-}
-.burger{
-    display: none;
-}
-.res-menu{
-    display:none;
-}
+    .burger{
+        display: none;
+    }
+    .res-menu{
+        display:none;
+    }
 
 }
 
@@ -272,23 +262,16 @@ table {
             font-family: 'Proxima';
         }
     }
-// .fixed{
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     height: 100vh;
-// }
     .res-menu{
-        position:absolute;
+        position: fixed;
         right: 0;
         width: 360px;
-        top: 0;
         height: 100vh;
         background: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        transform: translateX(calc(100% + 1px));
+        transform: translateX(calc(100% + 1px)) translateY(-85px);
         transition: transform 0.5s ease-in;
         z-index: 9001; //over 9000 ofc
         ul{
@@ -388,6 +371,8 @@ table {
     }
     .nav-active{
         transform: translateX(0%);
+        position: fixed;
+        transform: translateY(-85px);
     }
     @keyframes fading{
         from{
@@ -411,11 +396,5 @@ table {
     .toggle .lines div{
         background: white;
     }
+    
 }
-// .fixed{
-//     position: fixed;
-//     right: 0;
-//     z-index: 9001;
-//     height: 100vh;
-//     top:0;
-// }
