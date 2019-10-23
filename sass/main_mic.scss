@@ -1,17 +1,51 @@
 #mic {
 
-  #page-about {
-    h1 {
-      color: red;
-    }
-  }
-
   #menu-default {
     float: right !important;
   }
 
   .footer-content {
     padding: 0 4%;
+
+    .chart {
+      padding-top: 20px;
+      padding-bottom: 50px;
+
+      h5 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: rgba(0,0,0,0.87);
+
+      .facebook {
+        margin-top: 16px;
+        margin-left: 8px;
+      }
+
+      .instapin {
+        margin-top: 16px;
+        margin-left: 10px;
+      }
+    }
+
+    .mini {
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .large {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
 
     .divider {
       margin-top: 50px;
@@ -31,6 +65,15 @@
       margin: 0;
       font-size: 18px;
       line-height: 2;
+
+      img {
+        margin-right: 10px;
+      }
+
+      .flechette {
+        margin-left: 20px;
+      }
+
     }
 
   }

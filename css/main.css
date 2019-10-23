@@ -10,12 +10,34 @@ body {
   font-family: 'Proximua', sans-serif;
 }
 
-#mic #page-about h1 {
-  color: red; }
 #mic #menu-default {
   float: right !important; }
 #mic .footer-content {
   padding: 0 4%; }
+  #mic .footer-content .chart {
+    padding-top: 20px;
+    padding-bottom: 50px; }
+    #mic .footer-content .chart h5 {
+      font-size: 18px;
+      font-weight: 700; }
+  #mic .footer-content a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87); }
+    #mic .footer-content a .facebook {
+      margin-top: 16px;
+      margin-left: 8px; }
+    #mic .footer-content a .instapin {
+      margin-top: 16px;
+      margin-left: 10px; }
+  #mic .footer-content .mini {
+    font-size: 11px;
+    text-transform: uppercase; }
+  #mic .footer-content .large {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  #mic .footer-content a:hover {
+    text-decoration: underline; }
   #mic .footer-content .divider {
     margin-top: 50px;
     margin-bottom: 50px; }
@@ -30,3 +52,7 @@ body {
     margin: 0;
     font-size: 18px;
     line-height: 2; }
+    #mic .footer-content p img {
+      margin-right: 10px; }
+    #mic .footer-content p .flechette {
+      margin-left: 20px; }
