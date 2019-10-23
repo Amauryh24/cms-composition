@@ -18,4 +18,6 @@ get_footer();
     <?php
 endwhile; //resetting the page loop
 wp_reset_query(); //resetting the page query
+
+wp_pagenavi();
 ?>

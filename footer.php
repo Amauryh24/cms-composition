@@ -1,10 +1,13 @@
 <?php
-echo get_the_ID();
+// https://www.gregoirenoyelle.com/acf-pro-utiliser-ajouter-pages-options-wordpress/
+wp_footer();
+
+
     //The mobile numbers you need to internationalise:
     //
     //https://www.clockworksms.com/blog/convert-a-mobile-number-into-international-format/
     //
-    $phone = get_field('phone', '296');
+    $phone = get_field('phone', 'option');
     $numbers = array($phone => 'BE'
 
       //  '07123 456 781' => 'US',
@@ -72,18 +75,18 @@ echo get_the_ID();
       <div class="col s12 m4 black white-text">
         <p>Horaires</p>
         <p>Lundi > Dimanche : (Fermé le mardi)</p>
-        <p><?php the_field('intervalle_ouverture', '296'); ?> > <?php the_field('intervalle_fermeture', '296'); ?></p>
+        <p><?php the_field('intervalle_ouverture', 'option'); ?> > <?php the_field('intervalle_fermeture', 'option'); ?></p>
       </div>
     </div>
     <div class="divider"></div>
     <div class="row section">
       <div class="col s12 m4">
         <h4>Rendez-nous visite !</h4>
-        <p><a href="<?php the_field('lien', '296'); ?>" target="_blank">Google map</a></p>
+        <p><a href="<?php the_field('lien', 'option'); ?>" target="_blank">Google map</a></p>
       </div>
       <div class="col s12 m4">
-        <p><?php the_field('adresse_prem_ligne_rue', '296'); ?>,  <?php the_field('adresse_prem_ligne_numero', '296'); ?> - <?php the_field('adresse_sec_ligne_code_postal', '296'); ?> <?php the_field('adresse_sec_ligne_localite', '296'); ?></p>
-        <p><a href="mailto:<?php the_field('email', '296'); ?>"><?php the_field('email', '296'); ?></a></p>
+        <p><?php the_field('adresse_prem_ligne_rue', 'option'); ?>,  <?php the_field('adresse_prem_ligne_numero', 'option'); ?> - <?php the_field('adresse_sec_ligne_code_postal', 'option'); ?> <?php the_field('adresse_sec_ligne_localite', 'option'); ?></p>
+        <p><a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></p>
         <p><a href="tel:<?php echo $n; ?>"><?php echo $phone; ?></a></p>
       </div>
       <div class="col s12 m4 right-align">
@@ -94,7 +97,5 @@ echo get_the_ID();
   </div>
 
 </footer>
-
-<?php wp_footer(); ?>
 </body>
 </html>

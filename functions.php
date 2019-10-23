@@ -100,15 +100,4 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'   => 'options-generales',
 	));
 }
-
-
-// ACF footer
-
-add_action('wp_footer','gn_styles_options_acf', 999);
-function gn_styles_options_acf() {
-	if (!function_exists('get_field')) {
-		return;
-	}
-	$rue = get_field('adresse_rue', 'option');
-}
 ?>
