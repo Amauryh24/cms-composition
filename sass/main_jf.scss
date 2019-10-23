@@ -239,12 +239,16 @@ table {
         .fix{
             display: flex;
             position: relative;
-            width: 85px;
             justify-content: center;
             align-items: center;
+            width: 85px;
         .lines{
+            transition: background 0.4s;
             position: fixed;
+            background: white;
             z-index: 9002; // over 9000 ofc
+            width: 85px;
+            padding: 28px;
             div{
                 transition: all 0.3s ease;
                 height: 3px;
@@ -278,7 +282,7 @@ table {
         flex-direction: column;
         align-items: center;
         transform: translateX(calc(100% + 1px)) translateY(-85px);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.3s ease-in;
         z-index: 9001; //over 9000 ofc
         ul{
             width: 100%;
@@ -399,8 +403,10 @@ table {
     .toggle .fix .line3{
         transform: rotate(45deg) translate(-7px, -6px) scalex(1.625);
     }
-    .toggle .fix .lines div{
-        background: white;
+    .toggle .fix .lines{
+        background: black;
+            div{
+                background: white;
+            }
     }
-    
 }
