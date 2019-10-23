@@ -51,10 +51,12 @@
 
 		<div class="burger">
 			<h5>Menu</h5>
+			<div class="fix">
 			<div class="lines">
 				<div class="line1"></div>
 				<div class="line2"></div>
 				<div class="line3"></div>
+			</div>
 			</div>
 		</div>
 	</div>
