@@ -1,7 +1,7 @@
 [
     {
         "key": "group_5da568317e698",
-        "title": "INFO",
+        "title": "INFOS",
         "fields": [
             {
                 "key": "field_5da5686f92117",
@@ -22,9 +22,9 @@
                 "endpoint": 0
             },
             {
-                "key": "field_5da56bb27c9a1",
-                "label": "Ligne 1",
-                "name": "ligne_1",
+                "key": "field_5dad9947e6f93",
+                "label": "Adresse",
+                "name": "adresse",
                 "type": "group",
                 "instructions": "",
                 "required": 0,
@@ -34,15 +34,15 @@
                     "class": "",
                     "id": ""
                 },
-                "show_in_rest": 0,
-                "edit_in_rest": 0,
+                "show_in_rest": 1,
+                "edit_in_rest": 1,
                 "layout": "block",
                 "sub_fields": [
                     {
-                        "key": "field_5da56950c76ae",
-                        "label": "colonne_4-5",
-                        "name": "",
-                        "type": "column",
+                        "key": "field_5da56bb27c9a1",
+                        "label": "Ligne 1",
+                        "name": "prem_ligne",
+                        "type": "group",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
@@ -53,13 +53,91 @@
                         },
                         "show_in_rest": 1,
                         "edit_in_rest": 1,
-                        "column-type": "4_5"
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5da56950c76ae",
+                                "label": "colonne_4-5",
+                                "name": "",
+                                "type": "column",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_rest": 1,
+                                "edit_in_rest": 1,
+                                "column-type": "4_5"
+                            },
+                            {
+                                "key": "field_5da568b4c76ad",
+                                "label": "Rue",
+                                "name": "rue",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_rest": 1,
+                                "edit_in_rest": 1,
+                                "default_value": "Route de Hamoir",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5da569e8c76b0",
+                                "label": "colonne_1-5",
+                                "name": "",
+                                "type": "column",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_rest": 1,
+                                "edit_in_rest": 1,
+                                "column-type": "1_5"
+                            },
+                            {
+                                "key": "field_5da569adc76af",
+                                "label": "Numéro",
+                                "name": "numero",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_rest": 1,
+                                "edit_in_rest": 1,
+                                "default_value": 87,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
                     },
                     {
-                        "key": "field_5da568b4c76ad",
-                        "label": "Rue",
-                        "name": "rue",
-                        "type": "text",
+                        "key": "field_5da56c067c9a3",
+                        "label": "Ligne 2",
+                        "name": "sec_ligne",
+                        "type": "group",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
@@ -70,144 +148,85 @@
                         },
                         "show_in_rest": 1,
                         "edit_in_rest": 1,
-                        "default_value": "Route de Hamoir",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": ""
-                    },
-                    {
-                        "key": "field_5da569e8c76b0",
-                        "label": "colonne_1-5",
-                        "name": "",
-                        "type": "column",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "show_in_rest": 1,
-                        "edit_in_rest": 1,
-                        "column-type": "1_5"
-                    },
-                    {
-                        "key": "field_5da569adc76af",
-                        "label": "Numéro",
-                        "name": "numero",
-                        "type": "text",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "show_in_rest": 1,
-                        "edit_in_rest": 1,
-                        "default_value": 87,
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": ""
-                    }
-                ]
-            },
-            {
-                "key": "field_5da56c067c9a3",
-                "label": "Ligne 2",
-                "name": "ligne_2",
-                "type": "group",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "show_in_rest": 0,
-                "edit_in_rest": 0,
-                "layout": "block",
-                "sub_fields": [
-                    {
-                        "key": "field_5da56c347c9a5",
-                        "label": "colonne_1-4",
-                        "name": "",
-                        "type": "column",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "show_in_rest": 1,
-                        "edit_in_rest": 1,
-                        "column-type": "1_4"
-                    },
-                    {
-                        "key": "field_5da56a0ac76b1",
-                        "label": "Code postal",
-                        "name": "code_postal",
-                        "type": "text",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "show_in_rest": 1,
-                        "edit_in_rest": 1,
-                        "default_value": 4500,
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": ""
-                    },
-                    {
-                        "key": "field_5da56c627c9a6",
-                        "label": "colonne_3-4",
-                        "name": "",
-                        "type": "column",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "show_in_rest": 1,
-                        "edit_in_rest": 1,
-                        "column-type": "3_4"
-                    },
-                    {
-                        "key": "field_5da56a59c76b2",
-                        "label": "Localité",
-                        "name": "localite",
-                        "type": "text",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "show_in_rest": 1,
-                        "edit_in_rest": 1,
-                        "default_value": "Huy",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": ""
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5da56c347c9a5",
+                                "label": "colonne_1-4",
+                                "name": "",
+                                "type": "column",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_rest": 1,
+                                "edit_in_rest": 1,
+                                "column-type": "1_4"
+                            },
+                            {
+                                "key": "field_5da56a0ac76b1",
+                                "label": "Code postal",
+                                "name": "code_postal",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_rest": 1,
+                                "edit_in_rest": 1,
+                                "default_value": 4500,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5da56c627c9a6",
+                                "label": "colonne_3-4",
+                                "name": "",
+                                "type": "column",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_rest": 1,
+                                "edit_in_rest": 1,
+                                "column-type": "3_4"
+                            },
+                            {
+                                "key": "field_5da56a59c76b2",
+                                "label": "Localité",
+                                "name": "localite",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_rest": 1,
+                                "edit_in_rest": 1,
+                                "default_value": "Huy",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
                     }
                 ]
             },
@@ -662,10 +681,10 @@
                 "endpoint": 0
             },
             {
-                "key": "field_5da578ea4dd21",
-                "label": "Lien",
-                "name": "lien",
-                "type": "url",
+                "key": "field_5db06621bdcb4",
+                "label": "Google Map",
+                "name": "google_map",
+                "type": "group",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -676,14 +695,54 @@
                 },
                 "show_in_rest": 1,
                 "edit_in_rest": 1,
-                "default_value": "https:\/\/www.google.be\/maps\/place\/Route+de+Hamoir+87,+4500+Huy\/@50.5144502,4.6841515,9z\/data=!4m5!3m4!1s0x47c1abc69feacef1:0xc1569a40c7fc166a!8m2!3d50.5030191!4d5.2742502?hl=fr",
-                "placeholder": ""
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5da578ea4dd21",
+                        "label": "Lien",
+                        "name": "lien",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_rest": 1,
+                        "edit_in_rest": 1,
+                        "default_value": "https:\/\/www.google.be\/maps\/place\/Route+de+Hamoir+87,+4500+Huy\/@50.5144502,4.6841515,9z\/data=!4m5!3m4!1s0x47c1abc69feacef1:0xc1569a40c7fc166a!8m2!3d50.5030191!4d5.2742502?hl=fr",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5da5785b4dd1f",
+                        "label": "Aperçu",
+                        "name": "iframe",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_rest": 1,
+                        "edit_in_rest": 1,
+                        "default_value": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2537.593164657906!2d5.269928550847897!3d50.50452917938212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1abc69feacef1%3A0xc1569a40c7fc166a!2sRoute%20de%20Hamoir%2087%2C%204500%20Huy!5e0!3m2!1sfr!2sbe!4v1571125910623!5m2!1sfr!2sbe\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\"><\/iframe>",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    }
+                ]
             },
             {
-                "key": "field_5da5785b4dd1f",
-                "label": "Aperçu",
-                "name": "iframe",
-                "type": "wysiwyg",
+                "key": "field_5db065a25994e",
+                "label": "OpenStreetMap",
+                "name": "",
+                "type": "tab",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -694,19 +753,126 @@
                 },
                 "show_in_rest": 1,
                 "edit_in_rest": 1,
-                "default_value": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2537.593164657906!2d5.269928550847897!3d50.50452917938212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1abc69feacef1%3A0xc1569a40c7fc166a!2sRoute%20de%20Hamoir%2087%2C%204500%20Huy!5e0!3m2!1sfr!2sbe!4v1571125910623!5m2!1sfr!2sbe\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\"><\/iframe>",
-                "tabs": "all",
-                "toolbar": "full",
-                "media_upload": 1,
-                "delay": 0
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5db065d65994f",
+                "label": "OpenStreetMap",
+                "name": "openstreetmap",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "show_in_rest": 1,
+                "edit_in_rest": 1,
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5db065f159950",
+                        "label": "Lien",
+                        "name": "lien",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_rest": 1,
+                        "edit_in_rest": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5db0684cce9c0",
+                        "label": "Latitude",
+                        "name": "latitude",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_rest": 1,
+                        "edit_in_rest": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5db06860ce9c1",
+                        "label": "Longitude",
+                        "name": "longitude",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_rest": 1,
+                        "edit_in_rest": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5db0686fce9c2",
+                        "label": "Niveau de zoom",
+                        "name": "zoom",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_rest": 1,
+                        "edit_in_rest": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
             }
         ],
         "location": [
             [
                 {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-pied-de-page"
+                }
+            ],
+            [
+                {
                     "param": "page",
                     "operator": "==",
-                    "value": "108"
+                    "value": "47"
                 }
             ]
         ],
