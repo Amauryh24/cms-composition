@@ -1,5 +1,5 @@
 <?php wp_head(); ?>
-
+<div id="overlay"></div>
 <div class="header-menu">
 	<div class="header-menu-inner">
         <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/svg/logo-full.svg" alt="" />
@@ -22,8 +22,9 @@
 					// if ( 'page' == $object->object && 2 == $object->object_id ) {
 					if ( 81 == $object->ID ) {
 						$template_dir = get_template_directory_uri();
-						// $object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
+						// $test = bloginfo('template_directory');
 						$object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
+						
 					}
 					if ( 89 == $object->ID ) {
 						$template_dir = get_template_directory_uri();
@@ -50,10 +51,12 @@
 
 		<div class="burger">
 			<h5>Menu</h5>
+			<div class="fix">
 			<div class="lines">
 				<div class="line1"></div>
 				<div class="line2"></div>
 				<div class="line3"></div>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -61,5 +64,4 @@
 <div class="res-menu">
 	<?php wp_nav_menu( $defaults ); ?>
 </div>
-
 
