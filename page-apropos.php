@@ -5,6 +5,33 @@ Template Name:Page_À-propos
 ?>
 
 <?php get_header(); ?>
+<section id="get_projets_archi">
+    <h1><?php the_field('premiere_section_title') ?></h1>
+    <div class="row">
+        <div class="col s12 m12 l8 offset-l1">
+
+
+            <div class="carousel carousel_slider">
+                <div class="carousel carousel_slider">
+                    <ul>
+                        <?php           
+                        if( have_rows('premiere_section_repeater') ):
+                            while ( have_rows('premiere_section_repeater') ) : the_row(); ?>
+
+                        <li class="carousel-item"> <img class="image" src="<?php the_sub_field('image'); ?>"></li>
+
+                        <?php  endwhile;
+                        else :
+                        endif;
+                        ?>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+</section>
 <section id='a_propos'>
 
     <div class="row content">
@@ -55,6 +82,7 @@ Template Name:Page_À-propos
             <h2 class="texte-banner"><?php the_field('contact_texte-banner') ?></h2>
             <div>
                 contact
+                <img src='<?php bloginfo('template_directory'); ?>/svg/Group 1300.svg' alt='' />
             </div>
 
         </a>

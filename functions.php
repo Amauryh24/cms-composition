@@ -4,6 +4,7 @@ define('CDN_MATERIALIZE_CSS', 'https://cdnjs.cloudflare.com/ajax/libs/materializ
 define('CDN_MATERIALIZE_JS', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js');
 
 
+
 // CHARGMENT DANS LE FRONT-END
 function project_scripts()
 {
@@ -19,6 +20,7 @@ function project_scripts()
 add_action('wp_enqueue_scripts', 'project_scripts');
 
 add_image_size('home_top',1500,1250,false);
+add_image_size( 'fullsize', 1500, 1250 );
 
 // RETIRER GUTENBERG
 // for posts
