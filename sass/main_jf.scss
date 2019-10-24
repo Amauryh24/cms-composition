@@ -118,8 +118,9 @@ table {
             }
         }
     }
-    .header-menu-inner ul li img{
+    .header-menu-inner ul li svg{
         height: 21px;
+        fill: black;
         position: relative;
     }
     .header-menu-inner ul #menu-item-89{
@@ -336,10 +337,11 @@ table {
                         justify-content: center;
                         border-bottom: none; // counter
                     }
-                    img{
-                        filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(60deg) brightness(103%) contrast(101%);
+                    svg{
+                        // filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(60deg) brightness(103%) contrast(101%);
                         width: 20px;
                         height: 20px;
+                        fill: white;
                     }
                 }
                 &:last-of-type{

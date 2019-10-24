@@ -145,8 +145,9 @@
     transition: width 0.2s, opacity 0.5s, background 0.3s, transform 0.6s;
     transition: width 0.2s, opacity 0.5s, background 0.3s, transform 0.6s, -webkit-transform 0.6s;
   }
-  .header-menu-inner ul li img {
+  .header-menu-inner ul li svg {
     height: 21px;
+    fill: black;
     position: relative;
   }
   .header-menu-inner ul #menu-item-89 {
@@ -419,11 +420,10 @@
             justify-content: center;
     border-bottom: none;
   }
-  .res-menu ul li:first-of-type img {
-    -webkit-filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(60deg) brightness(103%) contrast(101%);
-            filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(60deg) brightness(103%) contrast(101%);
+  .res-menu ul li:first-of-type svg {
     width: 20px;
     height: 20px;
+    fill: white;
   }
   .res-menu ul li:last-of-type {
     display: -webkit-box;

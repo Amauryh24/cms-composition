@@ -23,7 +23,12 @@
 					if ( 81 == $object->ID ) {
 						$template_dir = get_template_directory_uri();
 						// $test = bloginfo('template_directory');
-						$object->title = '<img src="' . $template_dir . '/svg/home-minimal.svg" alt="" />';
+						$object->title = '
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.392 16.552">
+						<g id="home-minimal" transform="translate(-135 -32.999)">
+						  <path id="Tracé_1514" data-name="Tracé 1514" class="cls-1" d="M9.674,1.181a.719.719,0,0,0-.956,0L2.242,6.938A.721.721,0,0,0,2,7.477v9.354a.72.72,0,0,0,.72.72H15.673a.72.72,0,0,0,.72-.72V7.477a.719.719,0,0,0-.242-.538Z" transform="translate(133 32)"/>
+						</g>
+					  	</svg>';
 						
 					}
 					if ( 89 == $object->ID ) {
