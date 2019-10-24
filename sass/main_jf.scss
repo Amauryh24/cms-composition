@@ -1,4 +1,3 @@
-// @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 @font-face {
     font-family: 'Proxima';
     // font-style: normal;
@@ -7,7 +6,7 @@
     src: url('../font/ProximaNova-Bold.otf') format('opentype');
 }
 
-.res-menu, .header-menu{
+.header-menu, .res-menu{
     /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -39,7 +38,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -57,98 +57,105 @@ table {
 	border-spacing: 0;
 }
 }
+
+.blacked{
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 33;
+    height: 100%;
+}
 @media screen and (min-width: 1227px){
-.header-menu{
-    width: 70%;
-    margin: 0 auto;
-}
-.header-menu-inner{
-    display: flex;
-    justify-content: space-between;
-    height: 135px;
-        ul{
-        display: flex;
-        }
-        li a{
-            display: flex;
-            align-items: center;
-            height: 100%;
-            padding: 0px 18px;
-            color: rgba(0, 0, 0, 0.9);
-            letter-spacing: 0.6px;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-            position: relative;
-            font-family: 'Proxima';
-        }
-}
-
-.header-menu-inner ul li:not(#menu-item-89) a{
-    position: relative; //peut etre inutile ??
-    text-transform: uppercase;
-    &:before,
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 50px;
-        left: 18; right: 18;
-        height: 3px;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 0;
+    .header-menu{
+        max-width: 1500px;
+        padding: 0 70px;
+        margin: 0 auto;
     }
-
-    &:hover,
-    &:focus {
+    .header-menu-inner{
+        display: flex;
+        justify-content: space-between;
+        height: 135px;
+            ul{
+            display: flex;
+            }
+            li a{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 0px 18px;
+                color: rgba(0, 0, 0, 0.9);
+                letter-spacing: 0.6px;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+                position: relative;
+                font-family: 'Proxima';
+            }
+    }
+    .header-menu-inner ul li:not(#menu-item-89) a{
+        position: relative; //peut etre inutile ??
+        text-transform: uppercase;
         &:before,
         &:after {
-            width: calc(100% - 36px);
-            transition: width 0.2s, opacity 0.5s, background 0.3s, transform 0.6s;
+            content: '';
+            position: absolute;
+            bottom: 50px;
+            left: 18; right: 18;
+            height: 3px;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 0;
+        }
+
+        &:hover,
+        &:focus {
+            &:before,
+            &:after {
+                width: calc(100% - 36px);
+                transition: width 0.2s, opacity 0.5s, background 0.3s, transform 0.6s;
+            }
         }
     }
-}
-.header-menu-inner ul li img{
-      height: 21px;
-      position: relative;
-}
-.header-menu-inner ul #menu-item-89{
-    display: flex;
-    align-items: center;
-}
-.header-menu-inner ul #menu-item-89 > a{
-    font-weight: 700;
-    text-transform: none;
-    color:white;
-    background: black;
-    font-size: 17px;
-    height: 49px;
-        svg{
-            fill: white;
-            margin-left: 20px;
-            width: 16px;
+    .header-menu-inner ul li img{
+        height: 21px;
+        position: relative;
     }
-    &:hover{
-        color:black;
-        background: white;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-        svg{
-            fill: black;
-            width: 16px;
+    .header-menu-inner ul #menu-item-89{
+        display: flex;
+        align-items: center;
+    }
+    .header-menu-inner ul #menu-item-89 > a{
+        font-weight: 700;
+        text-transform: none;
+        color:white;
+        background: black;
+        font-size: 17px;
+        height: 49px;
+            svg{
+                fill: white;
+                margin-left: 20px;
+                width: 16px;
+        }
+        &:hover{
+            color:black;
+            background: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+            svg{
+                fill: black;
+                width: 16px;
+            }
         }
     }
-}
-.burger{
-    display: none;
-}
-.res-menu{
-    display:none;
-}
+    .burger{
+        display: none;
+    }
+    .res-menu{
+        display:none;
+    }
 
 }
-
-
-
 
 
 
@@ -229,10 +236,19 @@ table {
         display: flex;
         cursor: pointer;
         height: 100%;
-        .lines{
-            margin: auto auto;
+        .fix{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
             width: 85px;
-            z-index: 99;
+        .lines{
+            transition: background 0.4s;
+            position: fixed;
+            background: white;
+            z-index: 9002; // over 9000 ofc
+            width: 85px;
+            padding: 28px;
             div{
                 transition: all 0.3s ease;
                 height: 3px;
@@ -246,6 +262,7 @@ table {
                 }
             }
         }
+    }
         h5{
             color: rgba(0, 0, 0, 0.9);
             font-weight: 700;
@@ -253,20 +270,20 @@ table {
             letter-spacing: 0.5px;
             align-self: center;
             font-family: 'Proxima';
-            // margin-right: 85px;
         }
     }
     .res-menu{
-        position: absolute;
+        position: fixed;
         right: 0;
-        width: 30%;
-        top: 0;
+        width: 360px;
+        height: 100vh;
         background: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        transform: translateX(calc(100% + 1px));
-        transition: transform 0.5s ease-in;
+        transform: translateX(calc(100% + 1px)) translateY(-85px);
+        transition: transform 0.3s ease-in;
+        z-index: 9001; //over 9000 ofc
         ul{
             width: 100%;
             padding-left: 30px;
@@ -291,8 +308,20 @@ table {
                         text-decoration: underline;
                       }
                 }
-                &:nth-of-type(6) a{ //remove second to last border-bottom
-                    border-bottom: 0px;
+                &:nth-of-type(6) a{ 
+                    border-bottom: 0px; //remove second to last border-bottom
+                }
+                &:not(:first-of-type):not(:last-of-type) a:after{
+                        content: "";
+                        position: absolute;
+                        background-image: url("../svg/fleche-droite.svg");
+                        height: 9px;
+                        width: 15px;
+                        opacity: 0.5;
+                        top: 24px;
+                        right: 2px;
+                        filter: invert(100%) sepia(14%) saturate(2%) hue-rotate(60deg) brightness(103%) contrast(101%)
+            
                 }
                 &:first-of-type{ // "LA MAISON DE LA FEMME" (IT Crowd 1.03)
                     height: 85px;
@@ -340,18 +369,20 @@ table {
                         color:white;
                         background: black;
                         border: 1px rgba(136, 136, 136, 0.582) solid;
-                        svg{
+                            svg{
                             fill: white;
                             width: 16px;
+                            }
                         }
                     }
-                }
                 }
             }
         }
     }
     .nav-active{
         transform: translateX(0%);
+        position: fixed;
+        transform: translateY(-85px);
     }
     @keyframes fading{
         from{
@@ -363,16 +394,19 @@ table {
             transform: translateX(0px);
         }
     }
-    .toggle .line1{
+    .toggle .fix .line1{
         transform: rotate(-45deg) translate(-3.2px, 6px);
     }
-    .toggle .line2{
+    .toggle .fix .line2{
         opacity: 0;
     }
-    .toggle .line3{
+    .toggle .fix .line3{
         transform: rotate(45deg) translate(-7px, -6px) scalex(1.625);
     }
-    .toggle .lines div{
-        background: white;
+    .toggle .fix .lines{
+        background: black;
+            div{
+                background: white;
+            }
     }
 }
