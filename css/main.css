@@ -104,9 +104,6 @@
   .positionFixedMenu ul li:not(:last-of-type) a:before, .positionFixedMenu ul li:not(:last-of-type) a:after {
     bottom: 0px !important;
   }
-  .test {
-    bottom: 0px !important;
-  }
   .header-menu {
     max-width: 1500px;
     padding: 0 70px;
