@@ -89,8 +89,8 @@ table {
                 bottom: 0px !important;
             }
         }
-        .header-logo > path{
-            transform: translate(inherit -30);
+        .header-logo:not(g path){
+            transform: translateY(-10px);
             opacity: 0;
             transition: opacity 1s ease, transform 1s;
         }
@@ -123,7 +123,6 @@ table {
             }
             .header-logo{
                 align-self: center;
-                
             }
     }
     .header-menu-inner ul li:not(:last-of-type) a{

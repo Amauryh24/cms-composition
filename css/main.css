@@ -104,9 +104,9 @@
   .positionFixedMenu ul li:not(:last-of-type) a:before, .positionFixedMenu ul li:not(:last-of-type) a:after {
     bottom: 0px !important;
   }
-  .positionFixedMenu .header-logo > path {
-    -webkit-transform: translate(inherit -30);
-            transform: translate(inherit -30);
+  .positionFixedMenu .header-logo {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
     opacity: 0;
     -webkit-transition: opacity 1s ease, -webkit-transform 1s;
     transition: opacity 1s ease, -webkit-transform 1s;
