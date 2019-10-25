@@ -1,5 +1,6 @@
 <?php wp_head(); ?>
 <div id="overlay"></div>
+<div class="header-container">
 <div class="header-menu">
 	<div class="header-menu-inner">
         <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/svg/logo-full.svg" alt="" />
@@ -83,6 +84,7 @@
 				<div class="line1"></div>
 				<div class="line2"></div>
 				<div class="line3"></div>
+			</div>
 			</div>
 			</div>
 		</div>

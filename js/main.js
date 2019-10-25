@@ -34,16 +34,32 @@ const navSlide = () => {
 };
 
 //func Scroll
-// const scrollFunction = () => {
-//     let menuInner = document.querySelector(".header-menu-inner")
-//     let menu = document.querySelector(".header-menu");
-//     if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth > 1227) ){
-//         menuInner.style.height = "85px";
-//         console.log("lol")
-//     } else {
-//         menuInner.style.height = "135px";
-//     }
-// }
+const scrollFunction = () => {
+    let menuInner = document.querySelector(".header-menu-inner")
+    let menu = document.querySelector(".header-menu");
+    let headerContainer = document.querySelector(".header-container");
+    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth > 1227) ){
+        
+        headerContainer.classList.add("positionFixedMenu");
+        menuInner.classList.add("positionFixedMenuInner");
+    } else {
+        headerContainer.classList.remove("positionFixedMenu");
+        menuInner.classList.remove("positionFixedMenuInner");
+    }
+
+    if(menuInner.classList.contains("positionFixedMenuInner")) {
+        // document.querySelector(".header-menu-inner ul li:not(:last-of-type) a::before").style.display = "none";
+        // document.querySelector(".header-menu-inner ul li:not(:last-of-type) a::after").style.display = "none";
+        // // if you want to add a class with many properties, then
+        // document.querySelector("div.b").classList.add("yourClass");
+        // // if you want to add one property to existing class then the below statement
+        // document.querySelector("div.b").style.attributeName= "";
+        // classList.toggle("test")
+        }
+
+
+
+}
 
 
 navSlide();
@@ -52,3 +68,4 @@ console.log(document.body.offsetWidth)
 window.onscroll = () => {
     scrollFunction();
 };
+

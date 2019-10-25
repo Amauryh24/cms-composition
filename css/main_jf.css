@@ -87,6 +87,23 @@
 }
 
 @media screen and (min-width: 1227px) {
+  .header-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .positionFixedMenu {
+    position: fixed;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 0 auto;
+    width: 100%;
+  }
+  .positionFixedMenuInner {
+    height: 60px !important;
+  }
+  .test {
+    bottom: 0px !important;
+  }
   .header-menu {
     max-width: 1500px;
     padding: 0 70px;
