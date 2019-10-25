@@ -75,12 +75,21 @@ table {
     .positionFixedMenu{
         position: fixed;
         height: 60px;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.95);
         margin: 0 auto;
         width: 100%;
     }
     .positionFixedMenuInner{
         height: 60px !important;
+    }
+
+    .positionFixedMenu{
+        ul li:not(:last-of-type) a{
+            &:before,
+            &:after {
+                bottom: 0px !important;
+            }
+        }
     }
     .test{
         bottom: 0px !important;

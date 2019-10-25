@@ -46,25 +46,8 @@ const scrollFunction = () => {
         headerContainer.classList.remove("positionFixedMenu");
         menuInner.classList.remove("positionFixedMenuInner");
     }
-
-    if(menuInner.classList.contains("positionFixedMenuInner")) {
-        // document.querySelector(".header-menu-inner ul li:not(:last-of-type) a::before").style.display = "none";
-        // document.querySelector(".header-menu-inner ul li:not(:last-of-type) a::after").style.display = "none";
-        // // if you want to add a class with many properties, then
-        // document.querySelector("div.b").classList.add("yourClass");
-        // // if you want to add one property to existing class then the below statement
-        // document.querySelector("div.b").style.attributeName= "";
-        // classList.toggle("test")
-        }
-
-
-
 }
-
-
 navSlide();
-console.log(document.body.offsetWidth)
-
 window.onscroll = () => {
     scrollFunction();
 };
