@@ -42,6 +42,7 @@ const scrollFunction = () => {
         
         headerContainer.classList.add("positionFixedMenu");
         menuInner.classList.add("positionFixedMenuInner");
+        // document.querySelectorAll(".header-logo > path").forEach((el) => el.style.transform = "translateY(-30px)");
     } else {
         headerContainer.classList.remove("positionFixedMenu");
         menuInner.classList.remove("positionFixedMenuInner");
