@@ -1,3 +1,4 @@
+//func right navbar
 const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".res-menu");
@@ -31,4 +32,23 @@ const navSlide = () => {
         overlay.classList.toggle("blacked");
     });
 };
+
+//func Scroll
+// const scrollFunction = () => {
+//     let menuInner = document.querySelector(".header-menu-inner")
+//     let menu = document.querySelector(".header-menu");
+//     if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth > 1227) ){
+//         menuInner.style.height = "85px";
+//         console.log("lol")
+//     } else {
+//         menuInner.style.height = "135px";
+//     }
+// }
+
+
 navSlide();
+console.log(document.body.offsetWidth)
+
+window.onscroll = () => {
+    scrollFunction();
+};

@@ -57,7 +57,19 @@ table {
 	border-spacing: 0;
 }
 }
-
+// .fixme{
+//     position: fixed; /* Set the navbar to fixed position */
+//     left: 0;
+//     right: 0;
+//     // width: 100%; /* Full width */
+//     background: white;
+//     transform: translateY(0px);
+//     // .nav-active{
+//     //     // transform: translateX(0%);
+//     //     position: fixed;
+//     //     transform: translateY(-85px);
+//     // }
+// }
 .blacked{
     background: rgba(0, 0, 0, 0.85);
     position: absolute;
@@ -95,7 +107,7 @@ table {
                 font-family: 'Proxima';
             }
     }
-    .header-menu-inner ul li:not(#menu-item-89) a{
+    .header-menu-inner ul li:not(:last-of-type) a{
         position: relative; //peut etre inutile ??
         text-transform: uppercase;
         &:before,
@@ -123,11 +135,11 @@ table {
         fill: black;
         position: relative;
     }
-    .header-menu-inner ul #menu-item-89{
+    .header-menu-inner ul .wishlist{
         display: flex;
         align-items: center;
     }
-    .header-menu-inner ul #menu-item-89 > a{
+    .header-menu-inner ul .wishlist a{
         font-weight: 700;
         text-transform: none;
         color:white;
@@ -173,12 +185,12 @@ table {
     }
     
     ///////// WISHLIST /////////
-    .header-menu-inner ul #menu-item-89{
+    .header-menu-inner ul .wishlist{
         display: flex;
         align-items: center;
         margin-right: 35px;
     }
-    .header-menu-inner ul #menu-item-89 > a{
+    .header-menu-inner ul .wishlist > a{
         font-weight: 700;
         text-transform: none;
         color:white;
@@ -229,7 +241,7 @@ table {
                 text-decoration: none;
                 font-family: 'Proxima';
             }
-        li:not(#menu-item-89){
+        li:not(:last-of-type){
             display: none;
         }
     }
@@ -344,7 +356,7 @@ table {
                         fill: white;
                     }
                 }
-                &:last-of-type{
+                &:last-of-type{ //tout va bien ici
                     display: flex;
                     align-items: center;
                     margin: 40px 0;
