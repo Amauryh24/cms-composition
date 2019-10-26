@@ -228,6 +228,9 @@
   .res-menu {
     display: none;
   }
+  .ETtelephoneMaison {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1226px) {
@@ -374,6 +377,9 @@
         -ms-grid-row-align: center;
         align-self: center;
     font-family: 'Proxima';
+  }
+  .ETtelephoneMaison {
+    display: none;
   }
   .res-menu {
     position: fixed;
@@ -554,6 +560,71 @@
   }
   .toggle .fix .lines div {
     background: white;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .res-menu {
+    width: 100%;
+    max-width: calc(100% - 50px);
+  }
+  .res-menu ul li:first-of-type a {
+    height: 60px;
+  }
+  .header-menu-inner {
+    height: 60px;
+  }
+  .header-menu-inner ul {
+    display: none;
+  }
+  .header-menu-inner .burger h5 {
+    display: none;
+  }
+  .header-menu-inner .burger .fix {
+    width: 60px;
+  }
+  .header-menu-inner .burger .fix .lines {
+    padding: 15.5px;
+    width: 60px;
+  }
+  .header-menu-inner .ETtelephoneMaison {
+    display: initial;
+  }
+  .header-menu-inner .ETtelephoneMaison .telephone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  .header-menu-inner .ETtelephoneMaison .telephone .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+  }
+  .header-menu-inner .ETtelephoneMaison .telephone .icon svg {
+    fill: white;
+    width: 10.5px;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    position: fixed;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
   }
 }
 /*# sourceMappingURL=main_jf.css.map */

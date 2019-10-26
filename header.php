@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head(); ?>
 <div id="overlay"></div>
 <div class="header-container">
@@ -60,7 +61,13 @@
 
 			wp_nav_menu( $defaults );
 		?>
-
+		<a class="ETtelephoneMaison"href="tel:087686012">
+			<div class="telephone">
+				<div class="icon">
+				<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 44"><path class="st0" d="M43.7,37.7l-6,6C37.5,43.9,37.3,44,37,44C16.6,44,0,27.4,0,7c0-0.3,0.1-0.5,0.3-0.7l6-6c0.4-0.4,1-0.4,1.4,0l10,10c0.4,0.4,0.4,1,0,1.4L12.4,17L27,31.6l5.3-5.3c0.4-0.4,1-0.4,1.4,0l10,10C44.1,36.7,44.1,37.3,43.7,37.7"></path></svg>
+				</div>
+			</div>
+		</a>
 		<div class="burger">
 			<h5>Menu</h5>
 			<div class="fix">

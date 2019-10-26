@@ -188,6 +188,9 @@ table {
     .res-menu{
         display:none;
     }
+    .ETtelephoneMaison{
+        display: none;
+    }
 
 }
 
@@ -277,27 +280,27 @@ table {
             justify-content: center;
             align-items: center;
             width: 85px;
-        .lines{
-            transition: background 0.4s;
-            position: fixed;
-            background: white;
-            z-index: 9002; // over 9000 ofc
-            width: 85px;
-            padding: 28px;
-            div{
-                transition: all 0.3s ease;
-                height: 3px;
-                background: black;
-                width: 16px;
-                margin: 5px auto;
-                &:nth-of-type(3){
-                    width: 10px;
-                    position: relative;
-                    left: 3px;
+            .lines{
+                transition: background 0.4s;
+                position: fixed;
+                background: white;
+                z-index: 9002; // over 9000 ofc
+                width: 85px;
+                padding: 28px;
+                div{
+                    transition: all 0.3s ease;
+                    height: 3px;
+                    background: black;
+                    width: 16px;
+                    margin: 5px auto;
+                    &:nth-of-type(3){
+                        width: 10px;
+                        position: relative;
+                        left: 3px;
+                    }
                 }
             }
         }
-    }
         h5{
             color: rgba(0, 0, 0, 0.9);
             font-weight: 700;
@@ -306,6 +309,9 @@ table {
             align-self: center;
             font-family: 'Proxima';
         }
+    }
+    .ETtelephoneMaison{
+        display: none;
     }
     .res-menu{
         position: fixed;
@@ -443,5 +449,59 @@ table {
             div{
                 background: white;
             }
+    }
+}
+// MOBILE 639 and lowers
+@media screen and (max-width: 639px){
+    .res-menu{
+        width: 100%;
+        max-width: calc(100% - 50px);
+        ul li:first-of-type a{
+            height: 60px;
+        }
+    }
+    .header-menu-inner{
+        height: 60px;
+        ul{
+            display: none;
+        }
+        .burger {
+            h5{
+                display: none;}
+            .fix{
+                width: 60px;
+                .lines{
+                    padding: 15.5px;
+                    width: 60px;
+                }
+            }
+        }
+        .ETtelephoneMaison{
+            display: initial;
+            .telephone{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                .icon{
+                    display: flex;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background:black;
+                    svg{
+                        fill: white;
+                        width: 10.5px;
+                    }
+                }
+            }
+       }
+    }
+   .nav-active{
+        transform: translateX(0%);
+        position: fixed;
+        transform: translateY(-60px);
     }
 }
