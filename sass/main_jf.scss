@@ -81,7 +81,6 @@ table {
     .positionFixedMenuInner{
         height: 60px !important;
     }
-
     .positionFixedMenu{
         ul li:not(:last-of-type) a{
             &:before,
@@ -89,7 +88,7 @@ table {
                 bottom: 0px !important;
             }
         }
-        .header-logo:not(g path){
+        .header-logo g:nth-of-type(2){
             transform: translateY(-10px);
             opacity: 0;
             transition: opacity 1s ease, transform 1s;
