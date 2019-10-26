@@ -39,10 +39,8 @@ const scrollFunction = () => {
     let menu = document.querySelector(".header-menu");
     let headerContainer = document.querySelector(".header-container");
     if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth > 1227) ){
-        
         headerContainer.classList.add("positionFixedMenu");
         menuInner.classList.add("positionFixedMenuInner");
-        // document.querySelectorAll(".header-logo > path").forEach((el) => el.style.transform = "translateY(-30px)");
     } else {
         headerContainer.classList.remove("positionFixedMenu");
         menuInner.classList.remove("positionFixedMenuInner");
