@@ -86,6 +86,10 @@
   height: 100%;
 }
 
+.logo-link {
+  height: 100%;
+}
+
 @media screen and (min-width: 1227px) {
   .header-container {
     width: 100%;
@@ -176,7 +180,7 @@
   .header-menu-inner ul li:not(:last-of-type) a:before, .header-menu-inner ul li:not(:last-of-type) a:after {
     content: '';
     position: absolute;
-    bottom: 50px;
+    bottom: 43px;
     left: 18;
     right: 18;
     height: 3px;

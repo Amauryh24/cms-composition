@@ -36,10 +36,10 @@ const navSlide = () => {
 
 //func Scroll
 const scrollFunction = () => {
+    let scrollWidth = window.innerWidth - document.documentElement.clientWidth;
     let menuInner = document.querySelector(".header-menu-inner")
-    let menu = document.querySelector(".header-menu");
     let headerContainer = document.querySelector(".header-container");
-    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth > 1227) ){
+    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth >= (1227-scrollWidth)) ){
         headerContainer.classList.add("positionFixedMenu");
         menuInner.classList.add("positionFixedMenuInner");
     } else {

@@ -47,7 +47,7 @@ Membres:
 - Amaury : 
 - Mika : 
 - Jf : J'ai voulu travaillé sur deux choses en même temps (le header et la front-page) ce qui m'a fait perdre beaucoup de temps au lieu de me focaliser directement sur le header dès le départ.
-	La réalisation du menu m'a appris beaucoup de techno css. J'ai utilisé un reset.css pour écraser materialize et travailler à partir de zero.  J'estime mon travail à une centaine d'heure. J'en ai retiré beaucoup de plaisir et j'estime être au 3-pixel-perfect.
+	La réalisation du menu m'a appris beaucoup de techno css. J'ai utilisé un reset.css pour écraser materialize et travailler à partir de zero.  J'estime mon travail à une petite centaine d'heures. J'ai retiré beaucoup de plaisir du travail et j'estime être au pixel-perfect.
 
 ## Conseils
 Dans votre répertoire local créer un dossier `css` et ne compiler que le fichier `main.scss`
