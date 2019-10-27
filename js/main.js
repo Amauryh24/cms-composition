@@ -14,7 +14,7 @@ const navSlide = () => {
         overlay.classList.toggle("blacked");
 
     });
-    //click sur n'importe ou en zone noire dans le menu deployé pour le faire disparaitre
+    //click dans le menu deployé pour le faire disparaitre
     nav.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
         navLinks.forEach((link, index) =>{
@@ -23,6 +23,7 @@ const navSlide = () => {
         burger.classList.toggle("toggle");
         overlay.classList.toggle("blacked");
     });
+    //click dans l'overlay pour le faire disparaitre
     overlay.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
         navLinks.forEach((link, index) =>{

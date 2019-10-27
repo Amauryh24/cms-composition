@@ -104,7 +104,13 @@ table {
             ul{
             display: flex;
             }
-            li a{
+            li {
+                svg{ //SVG Maison full screen
+                    height: 21px;
+                    fill: black;
+                    position: relative;
+                }
+                a{
                 display: flex;
                 align-items: center;
                 height: 100%;
@@ -117,6 +123,7 @@ table {
                 text-decoration: none;
                 position: relative;
                 font-family: 'Proxima';
+                }
             }
             .header-logo{
                 align-self: center;
@@ -129,7 +136,7 @@ table {
             }
     }
     .header-menu-inner ul li:not(:last-of-type) a{
-        position: relative; //peut etre inutile ??
+        // position: relative;
         text-transform: uppercase;
         &:before,
         &:after {
@@ -151,34 +158,29 @@ table {
             }
         }
     }
-    .header-menu-inner ul li svg{
-        height: 21px;
-        fill: black;
-        position: relative;
-    }
     .header-menu-inner ul .wishlist{
         display: flex;
         align-items: center;
-    }
-    .header-menu-inner ul .wishlist a{
-        font-weight: 700;
-        text-transform: none;
-        color:white;
-        background: black;
-        font-size: 17px;
-        height: 49px;
-            svg{
-                fill: white;
-                margin-left: 20px;
-                width: 16px;
-        }
-        &:hover{
-            color:black;
-            background: white;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-            svg{
-                fill: black;
-                width: 16px;
+        a{
+            font-weight: 700;
+            text-transform: none;
+            color:white;
+            background: black;
+            font-size: 17px;
+            height: 49px;
+                svg{
+                    fill: white;
+                    margin-left: 20px;
+                    width: 16px;
+            }
+            &:hover{
+                color:black;
+                background: white;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+                svg{
+                    fill: black;
+                    width: 16px;
+                }
             }
         }
     }
@@ -191,7 +193,6 @@ table {
     .ETtelephoneMaison{
         display: none;
     }
-
 }
 
 
@@ -207,69 +208,64 @@ table {
         margin: 0 auto;
         padding: 0px 0px 0px 6%;
     }
-    
-    ///////// WISHLIST /////////
-    .header-menu-inner ul .wishlist{
-        display: flex;
-        align-items: center;
-        margin-right: 35px;
-    }
-    .header-menu-inner ul .wishlist > a{
-        font-weight: 700;
-        text-transform: none;
-        color:white;
-        background: black;
-        font-size: 17px;
-        height: 49px;
-            svg{
-                fill: white;
-                margin-left: 20px;
-                width: 16px;
-        }
-        &:hover{
-            color:black;
-            background: white;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-            svg{
-                fill: black;
-                width: 16px;
-            }
-        }
-    }
-    //////// FIN WISHLIST ///////////
-
     .header-menu-inner{
+        position: relative; //DIMANCHE
         display: flex;
         justify-content: flex-end;
         height: 85px;
         align-items: center;
         ul{
             display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            li a{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0px 18px;
+                    color: rgba(0, 0, 0, 0.9);
+                    letter-spacing: 0.6px;
+                    text-decoration: none;
+                    font-family: 'Proxima';
+                }
+            li:not(:last-of-type){
+                display: none;
             }
-        .header-logo{ //img 
-            height: inherit;
-            position: absolute;
-            left: 8%;
-        }
-    }
-    .header-menu-inner ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        li a{
+            .wishlist{     ///////// btn WISHLIST seul /////////
                 display: flex;
                 align-items: center;
-                height: 100%;
-                padding: 0px 18px;
-                color: rgba(0, 0, 0, 0.9);
-                letter-spacing: 0.6px;
-                text-decoration: none;
-                font-family: 'Proxima';
-            }
-        li:not(:last-of-type){
-            display: none;
+                margin-right: 35px;
+                & > a{
+                    font-weight: 700;
+                    text-transform: none;
+                    color:white;
+                    background: black;
+                    font-size: 17px;
+                    height: 49px;
+                        svg{
+                            fill: white;
+                            margin-left: 20px;
+                            width: 16px;
+                    }
+                    &:hover{
+                        color:black;
+                        background: white;
+                        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+                        svg{
+                            fill: black;
+                            width: 16px;
+                        }
+                    }
+                }
+            }    //////// FIN btn WISHLIST seul ///////////
+        }
+        .header-logo{
+            height: inherit;
+            position: absolute;
+            left: 0%; // DIMANCHE (8%)
         }
     }
+
     .burger{
         display: flex;
         cursor: pointer;
@@ -446,9 +442,9 @@ table {
     }
     .toggle .fix .lines{
         background: black;
-            div{
-                background: white;
-            }
+        div{
+            background: white;
+        }
     }
 }
 // MOBILE 639 and lowers
@@ -462,6 +458,9 @@ table {
     }
     .header-menu-inner{
         height: 60px;
+        .header-logo{
+            width: 120px;
+        }
         ul{
             display: none;
         }
