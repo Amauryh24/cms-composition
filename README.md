@@ -1,6 +1,6 @@
 
 # Projet Theme Wordpress CMS  "Composition"
-BECODE Liège Octrobre 2019 // Jepsen 2.14
+BECODE Liège Octobre 2019 // Jepsen 2.14
 
 
 ## Lexique
