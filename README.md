@@ -37,12 +37,12 @@ Membres:
 - Amaury : Page Architecte intérieur // Page A propos // Front-page.
 - Mika : Full ACF export/import
 - Jf : Header
-## Technologie utilisées
+## Technologies utilisées
 - SASS
 - Materialize CSS
 - Docker (MariaDB 10.1)
 - WordPress 5.2.3 (plugins: ACF Pro, CPT UI)
-## Difficulté(s) rencontrée par chacun.
+## Difficulté(s) rencontrée(s) par chacun.
 - Jen :
 - Amaury : 
 - Mika : 
