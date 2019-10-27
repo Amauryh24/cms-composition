@@ -1,3 +1,4 @@
+//func right navbar
 const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".res-menu");
@@ -13,7 +14,7 @@ const navSlide = () => {
         overlay.classList.toggle("blacked");
 
     });
-    //click sur n'importe ou en zone noire dans le menu deployé pour le faire disparaitre
+    //click dans le menu deployé pour le faire disparaitre
     nav.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
         navLinks.forEach((link, index) =>{
@@ -22,6 +23,7 @@ const navSlide = () => {
         burger.classList.toggle("toggle");
         overlay.classList.toggle("blacked");
     });
+    //click dans l'overlay pour le faire disparaitre
     overlay.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
         navLinks.forEach((link, index) =>{
@@ -31,12 +33,22 @@ const navSlide = () => {
         overlay.classList.toggle("blacked");
     });
 };
+
+//func Scroll
+const scrollFunction = () => {
+    let scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+    let menuInner = document.querySelector(".header-menu-inner")
+    let headerContainer = document.querySelector(".header-container");
+    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth >= (1227-scrollWidth)) ){
+        headerContainer.classList.add("positionFixedMenu");
+        menuInner.classList.add("positionFixedMenuInner");
+    } else {
+        headerContainer.classList.remove("positionFixedMenu");
+        menuInner.classList.remove("positionFixedMenuInner");
+    }
+}
 navSlide();
-document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, {
-        duration: 500,
-        indicators: true,
-        fullWidth: true
-    });
-});
+window.onscroll = () => {
+    scrollFunction();
+};
+
