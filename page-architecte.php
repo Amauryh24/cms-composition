@@ -28,15 +28,11 @@ Template Name: Page_Architecte
                         <?php    elseif( get_row_layout() == 'titre' ):?>
                         <a href=" <?php the_permalink(); ?>">
                             <p> <?php the_sub_field('titre') ?> </p>
-                            <p>voir projet
-
-                            </p>
-
+                            <p>voir projet</p>
                         </a>
 
 
                         <?php endif; endwhile;?>
-
                     </li>
                     <?php endwhile;
                 endif; ?>
@@ -137,7 +133,6 @@ Template Name: Page_Architecte
             <h2 class="texte-banner"><?php the_field('contact_texte-banner') ?></h2>
             <div>
                 contact
-                <img src='<?php bloginfo('template_directory'); ?>/svg/Group 1300.svg' alt='' />
             </div>
 
         </a>

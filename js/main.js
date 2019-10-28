@@ -7,7 +7,7 @@ const navSlide = () => {
     //click sur le burger pour faire apparaitre le menu
     burger.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
-        navLinks.forEach((link, index) =>{
+        navLinks.forEach((link, index) => {
             link.style.animation ? link.style.animation = "" : link.style.animation = `fading 0.5s ease forwards ${index / 7 + 0.3}s`
         });
         burger.classList.toggle("toggle");
@@ -17,7 +17,7 @@ const navSlide = () => {
     //click dans le menu deployé pour le faire disparaitre
     nav.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
-        navLinks.forEach((link, index) =>{
+        navLinks.forEach((link, index) => {
             link.style.animation ? link.style.animation = "" : link.style.animation = `fading 0.5s ease forwards ${index / 7 + 0.3}s`
         });
         burger.classList.toggle("toggle");
@@ -26,7 +26,7 @@ const navSlide = () => {
     //click dans l'overlay pour le faire disparaitre
     overlay.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
-        navLinks.forEach((link, index) =>{
+        navLinks.forEach((link, index) => {
             link.style.animation ? link.style.animation = "" : link.style.animation = `fading 0.5s ease forwards ${index / 7 + 0.3}s`
         });
         burger.classList.toggle("toggle");
@@ -39,7 +39,7 @@ const scrollFunction = () => {
     let scrollWidth = window.innerWidth - document.documentElement.clientWidth;
     let menuInner = document.querySelector(".header-menu-inner")
     let headerContainer = document.querySelector(".header-container");
-    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth >= (1227-scrollWidth)) ){
+    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (document.body.offsetWidth >= (1227 - scrollWidth))) {
         headerContainer.classList.add("positionFixedMenu");
         menuInner.classList.add("positionFixedMenuInner");
     } else {
@@ -52,3 +52,11 @@ window.onscroll = () => {
     scrollFunction();
 };
 
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+        duration: 500,
+        indicators: true,
+        fullWidth: true
+    });
+});

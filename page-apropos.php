@@ -82,7 +82,7 @@ Template Name:Page_À-propos
             <h2 class="texte-banner"><?php the_field('contact_texte-banner') ?></h2>
             <div>
                 contact
-                <img src='<?php bloginfo('template_directory'); ?>/svg/Group 1300.svg' alt='' />
+
             </div>
 
         </a>
