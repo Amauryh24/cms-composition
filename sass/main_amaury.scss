@@ -569,6 +569,7 @@
         }
 
         .content-link:hover {
+
           .title_hover,
           .texte_hover,
           .lien_hover {
@@ -604,8 +605,7 @@
           background-color: white;
 
           .svg-left {
-            filter: invert(100%) sepia(61%) saturate(2%) hue-rotate(197deg)
-              brightness(116%) contrast(100%);
+            filter: invert(100%) sepia(61%) saturate(2%) hue-rotate(197deg) brightness(116%) contrast(100%);
             background: white;
           }
         }
@@ -632,8 +632,7 @@
 
           .lien_hover {
             .svg_hover {
-              filter: invert(100%) sepia(61%) saturate(2%) hue-rotate(197deg)
-                brightness(116%) contrast(100%);
+              filter: invert(100%) sepia(61%) saturate(2%) hue-rotate(197deg) brightness(116%) contrast(100%);
               background: white;
             }
           }
