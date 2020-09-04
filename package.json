@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/amaury2409/cms-composition#readme",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "scss": "node-sass --watch sass -o css"
